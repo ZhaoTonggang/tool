@@ -154,8 +154,8 @@ header nav ul li a {
 
 header nav ul li a:hover,
 header nav ul li a.selected {
-	color: #003cff;
-	display: flex;
+	color: #00aaff;
+	display: block;
 	text-align: center
 }
 
