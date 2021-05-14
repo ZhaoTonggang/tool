@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<!--语言-->
+	<meta http-equiv="Content-Language" contect="zh">
+	<!--移动端适配-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	<!-- 避免IE使用兼容模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!--窗口设定-->
+	<meta http-equiv="Window-target" content="_top">
+	<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	<meta name="HandheldFriendly" content="true">
+	<!-- 微软的老式浏览器 -->
+	<meta name="MobileOptimized" content="320">
+	<!-- windows phone 点击无高光 -->
+	<meta name="msapplication-tap-highlight" content="no">
+	<!--百度禁止转码-->
+	<meta http-equiv="Cache-Control" content="no-siteapp">
+	<!--浏览器的兼容配置-->
+	<!--Microsoft Internet Explorer-->
+	<!--是否开启cleartype显示效果-->
+	<meta http-equiv="cleartype" content="on">
+	<meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
+	<!--Pinned Site-->
+	<!-- IE 10 / Windows 8 -->
+	<meta name="msapplication-TileImage" content="pinned-tile-144.png">
+	<meta name="msapplication-TileColor" content="#009900">
+	<!--IE 11 / Windows 9.1-->
+	<meta name="msapplication-config" content="ieconfig.xml">
+	<!--Google Chrome-->
+	<!--禁止自动翻译-->
+	<meta name="google" value="notranslate">
+	<!--360浏览器-->
+	<!--极速模式-->
+	<meta name="renderer" content="webkit">
+	<!--QQ手机浏览器-->
+	<!--锁定屏幕在特定方向-->
+	<meta name="x5-orientation" content="portrait">
+	<!-- 全屏显示 -->
+	<meta name="x5-fullscreen" content="true">
+	<!-- 应用模式 -->
+	<meta name="x5-page-mode" content="app">
+	<!--UC浏览器-->
+	<!-- uc强制竖屏 -->
+	<meta name="screen-orientation" content="portrait">
+	<!-- UC强制全屏 -->
+	<meta name="full-screen" content="yes">
+	<!-- UC应用模式 -->
+	<meta name="browsermode" content="application">
+	<!-- 禁止自动探测手机/邮箱号码 -->
+	<meta name="format-detection" content="telphone=no, email=no">
+	<!-- Add to Home Screen添加到主屏 -->
+	<!-- 是否启用 WebApp 全屏模式 -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- 设置状态栏的背景颜色,只有在 “apple-mobile-web-app-capable” content=”yes” 时生效 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!-- 添加到主屏后的标题 -->
+	<meta name="apple-mobile-web-app-title" content="赵彤刚的工具箱">
+	<!--Google Android-->
+	<meta name="theme-color" content="#CCFFFF">
+	<!-- 添加到主屏 -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<!--图标设置-->
+	<link rel="apple-touch-icon" sizes="192x192" href="./heheda/img/icon/192.png">
+	<link rel="icon" type="image/png" sizes="128x128" href="./heheda/img/icon/128.png">
+	<link rel="icon" type="image/png" sizes="144x144" href="./heheda/img/icon/144.png">
+	<link rel="icon" type="image/png" sizes="256x256" href="./heheda/img/icon/256.png">
+	<link rel="icon" type="image/png" sizes="512x512" href="./heheda/img/icon/512.png">
+	<link rel="stylesheet" type="text/css" href="./heheda/css/style.css">
+	<title>赵彤刚的工具箱</title>
+	<!--PWA配置-->
+	<link rel='manifest' href='./manifest.json'>
+	<script src="./heheda/js/modernizr.js"></script>
+	<header>
+		<div class="logo"> <a href="./"><img src="./heheda/img/logo.png" style="max-width: 180px;" /></a></div><input
+			type="checkbox" checked="true" id="antzone" />
+		<label for="antzone"><img src="./heheda/img/header/align.svg" alt="align" height="40px" width="40px"></label>
+		<img>
+		<nav>
+			<ul>
+				<li>
+					<div class="icon" style="background-color: #02AAFF;">
+						<img src="heheda/img/header/movie.svg" alt="movie" height="18px" width="18px">
+					</div><a href="#yyst">影音视听</a>
+				<li>
+					<div class="icon" style="background-color: #FFB547;">
+						<img src="heheda/img/header/game.svg" alt="game" height="18px" width="18px">
+					</div><a href="#yxyl">游戏娱乐</a>
+				<li>
+					<div class="icon" style="background-color: #FF4242;">
+						<img src="heheda/img/header/originality.svg" alt="originality" height="18px" width="18px">
+					</div><a href="#yqcy">有趣创意</a>
+				<li>
+					<div class="icon" style="background-color: #23C4A4;">
+						<img src="heheda/img/header/tool.svg" alt="tool" height="18px" width="18px">
+					</div><a href="#cygj">常用工具</a>
+				<li>
+					<div class="icon" style="background-color: #c400ba;">
+						<img src="heheda/img/header/message.svg" alt="message" height="18px" width="18px">
+					</div><a href="#hdjl">互动交流</a>
+			</ul>
+		</nav>
+		<div class="footer">
+			<div class="rights">
+				<p class="a_animation">Made by <a href="https://my.heheda.top/" target="_blank">赵彤刚</a></p>
+				<p class="a_animation"><a href="https://monitor.heheda.top/" target="_blank">服务器状态</a></p>
+			</div>
+		</div>
+	</header>
+	<!--#影音视听#-->
+	<section class="main" id="yyst">
+		<div class="div_title">
+			<h1>#影音视听#</h1>
+		</div>
+		<div class="link_item">
+			<div class="content"> <img src="https://music.heheda.top/favicon.ico" alt="" class="logo" loading=lazy>
+				<div class="title a_animation"> <a href="https://music.heheda.top/" target="_blank">品歌
+						<img src="heheda/img/header/external.svg" alt="external" height="18px" width="18px">
+					</a></div>
+				<div class="description">免费的在线音乐播放器。</div>
+				<div class="category" style="background-color:#021bff;color:#021bff"> 影音视听</div>
+			</div>
+		</div>
+		<div class="link_item">
+			<div class="content"> <img src="https://movie.heheda.top/favicon.ico" alt="" class="logo" loading=lazy>
+				<div class="title a_animation"> <a href="https://movie.heheda.top/" target="_blank">风影阁
+						<img src="./heheda/img/header/external.svg" alt="external" height="18px" width="18px">
+					</a></div>
+				<div class="description">免费的在线影视平台。</div>
+				<div class="category" style="background-color:#021bff;color:#021bff"> 影音视听</div>
+			</div>
+		</div>
+	</section>
+	<!--#游戏娱乐#-->
+	<section class="main" id="yxyl">
+		<div class="div_title">
+			<h1>#游戏娱乐#</h1>
+		</div>
+		<div class="link_item">
+			<div class="content"> <img src="https://cuber.heheda.top/icon.png" alt="" class="logo" loading=lazy>
+				<div class="title a_animation"> <a href="https://cuber.heheda.top/" target="_blank">电子魔方
+						<img src="heheda/img/header/external.svg" alt="external" height="18px" width="18px">
+					</a></div>
+				<div class="description">一个可以在线玩魔方的平台。</div>
+				<div class="category" style="background-color:#ffa600;color:#ffa600"> 游戏娱乐</div>
+			</div>
+		</div>
+	</section>
+	<!--#有趣创意#-->
+	<section class="main" id="yqcy">
+		<div class="div_title">
+			<h1>#有趣创意#</h1>
+		</div>
+		<div class="link_item">
+			<div class="content"> <img src="./heheda/img/header/index.svg" alt="" class="logo" loading=lazy>
+				<div class="title a_animation"> <a href="https://relax.heheda.top/" target="_blank">聆音
+						<img src="./heheda/img/header/external.svg" alt="external" height="18px" width="18px">
+					</a></div>
+				<div class="description">使你放松的在线白噪音程序。</div>
+				<div class="category" style="background-color:#ff0000;color:#ff0000"> 有趣创意</div>
+			</div>
+		</div>
+		<div class="link_item">
+			<div class="content"> <img src="https://musical.heheda.top/favicon.ico" alt="" class="logo" loading=lazy>
+				<div class="title a_animation"> <a href="https://musical.heheda.top/" target="_blank">音悦台
+						<img src="./heheda/img/header/external.svg" alt="external" height="18px" width="18px">
+					</a></div>
+				<div class="description">免费稳定的HTML悬浮播放器。</div>
+				<div class="category" style="background-color:#ff0000;color:#ff0000"> 有趣创意</div>
+			</div>
+		</div>
+		<div class="link_item">
+			<div class="content"> <img src="./heheda/img/header/instrument.svg" alt="" class="logo" loading=lazy>
+				<div class="title a_animation"> <a href="https://instrument.heheda.top/" target="_blank">乐器交互
+						<img src="./heheda/img/header/external.svg" alt="external" height="18px" width="18px">
+					</a></div>
+				<div class="description">关于乐器交互的实验性平台。</div>
+				<div class="category" style="background-color:#ff0000;color:#ff0000"> 有趣创意</div>
+			</div>
+		</div>
+	</section>
+	<!--#常用工具#-->
+	<section class="main" id="cygj">
+		<div class="div_title">
+			<h1>#常用工具#</h1>
+		</div>
+		<div class="link_item">
+			<div class="content"> <img src="https://163-music-api-doc.heheda.top/favicon.ico" alt="" class="logo"
+					loading=lazy>
+				<div class="title a_animation"> <a href="https://music-api.heheda.top/" target="_blank">云音乐API
+						<img src="heheda/img/header/external.svg" alt="external" height="18px" width="18px">
+					</a></div>
+				<div class="description">仅供学术研究，将在不久删除。</div>
+				<div class="category" style="background-color:#9900ff;color:#9900ff"> 常用工具</div>
+			</div>
+		</div>
+		<div class="link_item">
+			<div class="content"> <img src="https://kms.heheda.top/favicon.ico" alt="" class="logo" loading=lazy>
+				<div class="title a_animation"> <a href="https://kms.heheda.top/" target="_blank">KMS激活工具
+						<img src="heheda/img/header/external.svg" alt="external" height="18px" width="18px">
+					</a></div>
+				<div class="description">免费激活window系统和office套装。</div>
+				<div class="category" style="background-color:#9900ff;color:#9900ff"> 常用工具</div>
+			</div>
+		</div>
+		<div class="link_item">
+			<div class="content"> <img src="https://ggso.heheda.top/icon/32.png" alt="" class="logo" loading=lazy>
+				<div class="title a_animation"> <a href="https://ggso.heheda.top/" target="_blank">学术之窗
+						<img src="heheda/img/header/external.svg" alt="external" height="18px" width="18px">
+					</a></div>
+				<div class="description">为学生和科研机构提供的搜索引擎。</div>
+				<div class="category" style="background-color:#9900ff;color:#9900ff"> 常用工具</div>
+			</div>
+		</div>
+		<div class="link_item">
+			<div class="content"> <img src="https://github.heheda.top/fluidicon.png" alt="" class="logo" loading=lazy>
+				<div class="title a_animation"> <a href="https://github.heheda.top/" target="_blank">Github中国
+						<img src="heheda/img/header/external.svg" alt="external" height="18px" width="18px">
+					</a></div>
+				<div class="description">为学生和科研机构提供的Github镜像。</div>
+				<div class="category" style="background-color:#9900ff;color:#9900ff"> 常用工具</div>
+			</div>
+		</div>
+	</section>
+	<!--#互动交流#-->
+	<section class="main" id="hdjl">
+		<section class="wrapper">
+			<div class="content">
+				<h1>#互动交流#</h1>
+				<p>你有什么好的建议或想法！</p>
+			</div>
+			<div class="commentContent">
+				<div id="vcomments"></div>
+			</div>
+			<script type="text/javascript">
+				loadComments();
+
+				function loadComments() {
+					if (typeof Valine === 'undefined') {
+						var getScript = (options) => {
+							var script = document.createElement('script');
+							script.defer = true;
+							script.crossOrigin = 'anonymous';
+							Object.keys(options).forEach((key) => {
+								script[key] = options[key];
+							});
+							document.body.appendChild(script);
+						};
+						getScript({
+							src: 'https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js',
+							onload: () => {
+								newValine();
+							}
+						});
+					} else {
+						newValine();
+					}
+				}
+
+				function newValine() {
+					new Valine({
+						el: '#vcomments',
+						appId: 'u0EtQJ6KPs4kEw0nptbhYOrp-gzGzoHsz',
+						appKey: 'peanhvXypOBhozptvLzQ0kkg',
+						placeholder: '功能开发中，暂不可用！！！',
+						avatar: 'wavatar',
+						meta: ['nick', 'mail'],
+						requiredFields: ['nick']
+					});
+				}
+			</script>
+		</section>
+	</section>
+	<a href="#0" class="cd-top">Top</a>
+	<script src="./heheda/js/jquery-1.11.0.min.js"></script>
+	<script src="./heheda/js/main.js"></script>
+	<script src="./heheda/js/3.0.js" type="module" defer=""
+		integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+	<script type="module">
+		import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+		const el = document.createElement('pwa-update');
+		document.body.appendChild(el);
+	</script>
