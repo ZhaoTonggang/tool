@@ -58,7 +58,6 @@ header {
 .main .div_title {
 	width: 100%;
 	margin: 5px auto -25px auto;
-	/* background-color: #2196F3 */
 }
 
 .main .div_title h1 {
@@ -349,7 +348,6 @@ header .rights p {
 }
 
 .content {
-	padding-top: 3rem;
 	color: #4b4848;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
