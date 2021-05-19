@@ -61,8 +61,10 @@ header {
 }
 
 .main .div_title h1 {
+	font-family: YouYuan,KaiTi,Microsoft Yahei;
 	color: black;
 	text-align: center;
+	font-weight:bolder;
 }
 
 @media (max-width: 1024px) {
@@ -153,7 +155,7 @@ header nav ul li a {
 
 header nav ul li a:hover,
 header nav ul li a.selected {
-	color: #00aaff;
+	color: #0004ff;
 	display: block;
 	text-align: center
 }
@@ -197,7 +199,6 @@ header .rights p {
 	}
 
 	header nav {
-		padding-top: 20px;
 		width: 100%;
 		z-index: 9999
 	}
@@ -219,15 +220,18 @@ header .rights p {
 
 	header nav ul li a {
 		display: block;
+		font-family: YouYuan,KaiTi,Microsoft Yahei;
 		width: 100%;
 		margin-left: 0px;
-		padding: 25px 0;
+		padding: 15px 0;
 		text-align: center;
 		color: #000000;
-		font-size: 16px;
+		font-size: 18px;
+		font-weight:bolder;
 		text-decoration: none;
-		border-bottom: 1px solid #f7f5f5;
-		background: #fff
+		border-bottom: 5px solid #f7f5f5;
+		background: #03a9f4;
+		border-radius: 30px;
 	}
 
 	:checked~nav {
@@ -356,6 +360,7 @@ header .rights p {
 }
 
 .content h1 {
+	font-family: YouYuan,KaiTi,Microsoft Yahei;
 	font-size: 24px;
 	color: #000000;
 	text-align: center
