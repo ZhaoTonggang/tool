@@ -14,7 +14,7 @@ li {
 	margin: 0
 }
 
-header {
+body header {
 	display: block;
 	position: fixed;
 	top: 0;
@@ -29,7 +29,7 @@ header {
 }
 
 @media (max-width: 1024px) {
-	header {
+	body header {
 		display: block;
 		width: 100%;
 		min-height: 100px;
@@ -102,20 +102,20 @@ header {
 	width: 100%
 }
 
-header .logo {
+body header .logo {
 	margin-top: 50px;
 	margin-right: 20px;
 }
 
-header input {
+body header input {
 	display: none
 }
 
-header label {
+body header label {
 	display: none
 }
 
-header nav ul {
+body header nav ul {
 	margin-left: 20px;
 	display: block;
 	overflow: hidden;
@@ -123,28 +123,28 @@ header nav ul {
 	list-style: none
 }
 
-header nav ul li {
+body header nav ul li {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	margin-bottom: 20px
 }
 
-header nav ul li .icon {
+body header nav ul li .icon {
 	display: flex;
 	align-items: center;
 	border-radius: 25px;
 	padding: 8px
 }
 
-header nav ul li svg {
+body header nav ul li svg {
 	min-width: 18px;
 	min-height: 18px;
 	width: 18px;
 	height: 18px
 }
 
-header nav ul li a {
+body header nav ul li a {
 	margin-left: 10px;
 	color: #000000;
 	font-size: 16px;
@@ -153,72 +153,72 @@ header nav ul li a {
 	letter-spacing: 1px
 }
 
-header nav ul li a:hover,
-header nav ul li a.selected {
+body header nav ul li a:hover,
+body header nav ul li a.selected {
 	color: #0004ff;
 	display: block;
 	text-align: center
 }
 
-header .footer {
+body header .footer {
 	position: absolute;
 	bottom: 15px;
 	margin-bottom: 5px;
 	margin-left: 30px
 }
 
-header .rights p {
+body header .rights p {
 	color: #000000;
 	font-size: 11px;
 	letter-spacing: 1px
 }
 
 @media (max-width: 1024px) {
-	header .logo {
+	body header .logo {
 		float: left;
 		margin: 40px 0 0 30px
 	}
 
-	header .footer {
+	body header .footer {
 		display: none
 	}
 
-	header input {
+	body header input {
 		display: none
 	}
 
-	header label {
+	body header label {
 		display: block;
 		float: right;
 		margin: 35px 30px 0 0
 	}
 
-	header label img {
+	body header label img {
 		width: 40px;
 		height: 40px
 	}
 
-	header nav {
+	body header nav {
 		width: 100%;
 		z-index: 9999;
 	}
 
-	header nav ul {
+	body header nav ul {
 		list-style: none;
 		position: relative;
 		width: 100%;
 		margin-left: 0px;
 	}
 
-	header nav ul li {
+	body header nav ul li {
 		margin-bottom: 0px
 	}
 
-	header nav ul li .icon {
+	body header nav ul li .icon {
 		display: none;
 	}
 
-	header nav ul li a {
+	body header nav ul li a {
 		display: block;
 		font-family: YouYuan,KaiTi,Microsoft Yahei;
 		width: 100%;
