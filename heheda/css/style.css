@@ -67,17 +67,6 @@ body header {
 	font-weight: bolder;
 }
 
-.main .div_ads {
-	border-radius: 10px;
-	border: 2px solid #00eeff;
-	height: auto;
-	max-height: 250px;
-	width: 100%;
-    margin: 40px 25px 0 35px;
-	box-shadow: 0px 0px 15px #00eeff;
-}
-
-
 @media (max-width: 1024px) {
 	.main {
 		padding-left: 0
@@ -254,10 +243,12 @@ body header .rights p {
 	width: 30%;
 	max-width: 450px;
 	padding-left: 30px;
-	padding-top: 30px;
+	padding-top: 30px
 }
 
 .link_item .content {
+	overflow: hidden;
+	text-align: center;
 	height: 250px;
 	border-radius: 10px;
 	border: 2px solid rgb(43, 255, 0);
@@ -268,6 +259,7 @@ body header .rights p {
 	transition: 0.2s linear
 }
 
+.ads .div_ads:hover,
 .link_item .content:hover {
 	box-shadow: 0 10px 40px -10px rgb(98, 0, 255);
 	border: 2px solid rgb(76, 0, 255);
@@ -282,7 +274,7 @@ body header .rights p {
 	min-width: 58px;
 	min-height: 58px;
 	height: 58px;
-	border-radius: 8px
+	border-radius: 5px
 }
 
 .link_item .content .title {
@@ -303,23 +295,35 @@ body header .rights p {
 	line-height: 18px
 }
 
-.link_item .content .description a {
-	color: #000000
-}
-
 .link_item .content .category {
 	background-color: #2196f3;
 	color: #2196f3;
 	display: inline-block;
 	overflow: visible;
-	margin-top: 16px;
-	margin-left: 0;
-	margin-right: 3px;
-	padding: 6px 14px;
+	margin: 0px;
+	padding: 5px 10px;
 	border-radius: 20px;
 	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7));
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 12px
+}
+
+.ads {
+	width: 100%;
+	padding: 40px 25px 0 30px;
+}
+
+.ads .div_ads {
+	overflow: hidden;
+	text-align: center;
+	height: auto;
+	max-height: 300px;
+	border-radius: 10px;
+	border: 2px solid #00eeff;
+	box-shadow: 0px 0px 15px #00eeff;
+	background: rgb(226, 255, 254);
+	-webkit-transition: 0.2s linear;
+	transition: 0.2s linear
 }
 
 @media (max-width: 1250px) {
@@ -332,6 +336,10 @@ body header .rights p {
 	.main {
 		padding-left: 15px;
 		padding-right: 15px
+	}
+
+	.ads {
+		padding: 40px 5px 0 5px;
 	}
 
 	.link_item {
@@ -353,6 +361,10 @@ body header .rights p {
 		max-width: 560px;
 		padding-left: 20px;
 		padding-right: 20px
+	}
+	
+	.ads {
+		padding: 40px 20px 0 20px;
 	}
 }
 
