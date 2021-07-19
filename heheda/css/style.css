@@ -48,7 +48,7 @@ body header {
 	box-sizing: border-box;
 	position: relative;
 	z-index: 55;
-	padding-bottom: 50px;
+	margin-bottom: 30px;
 	clear: both;
 	display: flex;
 	flex-wrap: wrap;
@@ -63,7 +63,9 @@ body header {
 .main .div_title h1 {
 	font-family: YouYuan, KaiTi, Microsoft Yahei;
 	color: black;
-	font-weight: bold;	
+	font-weight: bold;
+	margin-top: 30px;
+	margin-bottom: 0;
 }
 
 @media (max-width: 1024px) {
@@ -72,19 +74,15 @@ body header {
 	}
 }
 
-.a_animation a {
-	position: relative;
-	color: #000000
-}
-
 .a_animation span {
 	position: relative;
+	font-family: YouYuan, KaiTi, Microsoft Yahei;
+	font-weight: bold;
 	color: #000000
 }
 
 body header .logo {
-	margin-top: 50px;
-	margin-right: 20px;
+	margin-top: 30px;
 }
 
 body header input {
@@ -247,7 +245,7 @@ body header .rights p {
 	transform-style: preserve-3d;
 	-webkit-transition: 0.2s linear;
 	transition: 0.2s linear;
-	cursor:pointer
+	cursor: pointer
 }
 
 .link_item .content .logo {
@@ -343,7 +341,7 @@ body header .rights p {
 		margin-left: 20px;
 		margin-right: 20px
 	}
-	
+
 	.ads {
 		margin: 40px 20px 0 20px;
 	}
@@ -352,11 +350,12 @@ body header .rights p {
 .wrapper {
 	width: 100%;
 	margin-left: 1.5rem;
-	margin-right: 1.5rem
+	margin-right: 1.5rem;
 }
 
 .content {
 	color: #4b4848;
+	text-align: center;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
@@ -374,11 +373,12 @@ body header .rights p {
 	color: #000000;
 	font-size: 18px;
 	line-height: 38px;
-	margin-bottom: 15px
+	margin-bottom: 15px;
+	text-align: center
 }
 
 .wrapper .commentContent {
-	margin-top: 3rem;
+	margin: 40px auto 0 auto;
 	max-width: 980px
 }
 
