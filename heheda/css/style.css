@@ -57,14 +57,13 @@ body header {
 
 .main .div_title {
 	width: 100%;
-	margin: 5px auto -25px auto;
+	text-align: center;
 }
 
 .main .div_title h1 {
 	font-family: YouYuan, KaiTi, Microsoft Yahei;
 	color: black;
-	text-align: center;
-	font-weight: bolder;
+	font-weight: bold;	
 }
 
 @media (max-width: 1024px) {
@@ -73,33 +72,14 @@ body header {
 	}
 }
 
-.a_animation a,
-.a_animation a:link,
-.a_animation a:visited,
-.a_animation a:focus {
-	text-decoration: none;
-	color: #000000
-}
-
 .a_animation a {
 	position: relative;
 	color: #000000
 }
 
-.a_animation a::after {
-	content: '';
-	display: block;
-	width: 0;
-	height: 3px;
-	position: absolute;
-	left: 0;
-	bottom: -3px;
-	background: #0400ff;
-	transition: all 0.3s ease-in-out
-}
-
-.a_animation a:hover::after {
-	width: 100%
+.a_animation span {
+	position: relative;
+	color: #000000
 }
 
 body header .logo {
@@ -242,8 +222,8 @@ body header .rights p {
 .link_item {
 	width: 30%;
 	max-width: 450px;
-	padding-left: 30px;
-	padding-top: 30px
+	margin-left: 30px;
+	margin-top: 30px
 }
 
 .link_item .content {
@@ -266,7 +246,8 @@ body header .rights p {
 	transform: translate3d(0px, -8px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
 	transform-style: preserve-3d;
 	-webkit-transition: 0.2s linear;
-	transition: 0.2s linear
+	transition: 0.2s linear;
+	cursor:pointer
 }
 
 .link_item .content .logo {
@@ -310,7 +291,7 @@ body header .rights p {
 
 .ads {
 	width: 100%;
-	padding: 40px 25px 0 30px;
+	margin: 50px 30px 0 30px;
 }
 
 .ads .div_ads {
@@ -339,14 +320,14 @@ body header .rights p {
 	}
 
 	.ads {
-		padding: 40px 5px 0 5px;
+		margin: 40px 15px 0 5px;
 	}
 
 	.link_item {
 		width: 48%;
 		margin: 0 auto;
-		padding-top: 30px;
-		padding-left: 0
+		margin-top: 30px;
+		margin-left: 0
 	}
 }
 
@@ -359,12 +340,12 @@ body header .rights p {
 	.link_item {
 		width: 100%;
 		max-width: 560px;
-		padding-left: 20px;
-		padding-right: 20px
+		margin-left: 20px;
+		margin-right: 20px
 	}
 	
 	.ads {
-		padding: 40px 20px 0 20px;
+		margin: 40px 20px 0 20px;
 	}
 }
 
