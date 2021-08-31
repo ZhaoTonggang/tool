@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  background: #fff;
+  background-color: var(--color-white);
   margin: 0;
 }
 
@@ -23,7 +23,7 @@ body header {
   width: 200px;
   min-height: 100%;
   padding: 0 0 0 30px;
-  background: #ffffff;
+  background-color: var(--color-white);
   float: left;
   overflow: hidden;
   z-index: 9999;
@@ -36,7 +36,7 @@ body header {
     min-height: 100px;
     padding: 0;
     position: relative;
-    background: #ffffff;
+    background-color: var(--color-white);
   }
 }
 .main {
@@ -61,7 +61,7 @@ body header {
 
 .main .div_title h1 {
   font-family: YouYuan, KaiTi, Microsoft Yahei;
-  color: black;
+  color: var(--color-a);
   font-weight: bold;
   margin-top: 30px;
   margin-bottom: 0;
@@ -76,7 +76,7 @@ body header {
   position: relative;
   font-family: YouYuan, KaiTi, Microsoft Yahei;
   font-weight: bold;
-  color: #000000;
+  color: var(--color-a);
 }
 
 body header .logo {
@@ -122,7 +122,7 @@ body header nav ul li svg {
 
 body header nav ul li a {
   margin-left: 10px;
-  color: #000000;
+  color: var(--color-a);
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
@@ -131,7 +131,7 @@ body header nav ul li a {
 
 body header nav ul li a:hover,
 body header nav ul li a.selected {
-  color: #0004ff;
+  color: #00a0e9;
   display: block;
   text-align: center;
 }
@@ -144,7 +144,7 @@ body header .footer {
 }
 
 body header .rights p {
-  color: #000000;
+  color: var(--color-a);
   font-size: 11px;
   letter-spacing: 1px;
 }
@@ -201,12 +201,12 @@ body header .rights p {
     margin-left: 0px;
     padding: 15px 0;
     text-align: center;
-    color: #000000;
+    color: var(--color-a);
     font-size: 18px;
     font-weight: bolder;
     text-decoration: none;
     border-bottom: 5px solid #f7f5f5;
-    background: #03a9f4;
+    background-color: #03a9f4;
     border-radius: 30px;
   }
 
@@ -228,7 +228,7 @@ body header .rights p {
   border-radius: 10px;
   border: 2px solid #2bff00;
   box-shadow: 0 10px 40px -10px #5eff00;
-  background: #e2fffe;
+  background-color: var(--color-content);
   padding: 20px 25px;
   transition: 0.2s linear;
 }
@@ -263,7 +263,7 @@ body header .rights p {
 
 .link_item .content .description {
   margin-top: 12px;
-  color: #000000;
+  color: var(--color-a);
   font-size: 13px;
   line-height: 18px;
 }
@@ -328,12 +328,12 @@ body header .rights p {
 .content h1 {
   font-family: YouYuan, KaiTi, Microsoft Yahei;
   font-size: 24px;
-  color: #000000;
+  color: var(--color-a);
   text-align: center;
 }
 
 .content p {
-  color: #000000;
+  color: var(--color-a);
   font-size: 18px;
   line-height: 38px;
   margin-bottom: 15px;
@@ -345,33 +345,38 @@ body header .rights p {
   max-width: 980px;
 }
 
+.div-span {
+  color: var(--color-a);
+  font-size: 15px;
+}
+
 /*谷歌、safari、qq浏览器、360浏览器滚动条样式*/
 /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
 ::-webkit-scrollbar {
   width: auto;
   height: auto;
-  background-color: #0059ff;
+  background-color: #202124;
 }
 
 /*定义滚动条轨道 内阴影+圆角*/
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  background-color: #33ff00;
+  background-color: #202124;
 }
 
 /*定义滑块 内阴影+圆角*/
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #0011ff;
+  background-color: #00a0e9;
 }
 
 /*滑块效果*/
 ::-webkit-scrollbar-thumb:hover {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-  background: #d400ff;
+  background: #ffee00;
 }
 
 /*IE滚动条颜色*/
@@ -381,11 +386,11 @@ html {
   scrollbar-highlight-color: #000;
   scrollbar-3dlight-color: #000;
   scrollbar-darkshadow-color: #000;
-  scrollbar-Shadow-color: #0011ff;
+  scrollbar-Shadow-color: #00a0e9;
   /*滑块边色*/
   scrollbar-arrow-color: rgba(0, 0, 0, 0.4);
   /*箭头颜色*/
-  scrollbar-track-color: #ff00dd;
+  scrollbar-track-color: #ffee00;
   /*背景颜色*/
 }
 
@@ -428,7 +433,7 @@ html {
 }
 
 .no-touch .cd-top:hover {
-  background-color: #ea00ff;
+  background-color: #ffee00;
   opacity: 1;
 }
 
@@ -446,14 +451,17 @@ html {
     bottom: 30px;
   }
 }
+:root {
+  --color-white: #ffffff;
+  --color-content: rgb(226, 255, 254);
+  --color-a: #000000;
+}
+
 /*深色模式*/
 @media (prefers-color-scheme: dark) {
-  html,
-img {
-    filter: invert(1) hue-rotate(180deg);
-  }
-
-  img {
-    opacity: 1;
+  :root {
+    --color-white: #000000;
+    --color-content: #202124;
+    --color-a: #ffffff;
   }
 }/*# sourceMappingURL=style.css.map */
