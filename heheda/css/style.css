@@ -205,8 +205,8 @@ body header .rights p {
     font-size: 18px;
     font-weight: bolder;
     text-decoration: none;
-    border-bottom: 5px solid #f7f5f5;
-    background-color: #03a9f4;
+    border-bottom: 5px solid var(--color-white);
+    background-color: var(--color-blue);
     border-radius: 30px;
   }
 
@@ -455,6 +455,7 @@ html {
   --color-white: #ffffff;
   --color-content: rgb(226, 255, 254);
   --color-a: #000000;
+  --color-blue: #03a9f4;
 }
 
 /*深色模式*/
@@ -463,5 +464,6 @@ html {
     --color-white: #000000;
     --color-content: #202124;
     --color-a: #ffffff;
+    --color-blue: #202124;
   }
 }/*# sourceMappingURL=style.css.map */
