@@ -70,6 +70,21 @@
 	<link rel="icon" type="image/png" sizes="256x256" href="./heheda/img/icon/256.png">
 	<link rel="icon" type="image/png" sizes="512x512" href="./heheda/img/icon/512.png">
 	<link rel="stylesheet" type="text/css" href="./heheda/css/style.css">
+	<!---资源预加载配置(css)-->
+	<link rel="preload" as="style" href="./heheda/css/style.css">
+	<!---资源预加载配置(js)-->
+	<link rel="preload" as="script" href="./heheda/js/jquery-3.6.0.min.js">
+	<link rel="preload" as="script" href="./heheda/js/su.js">
+	<link rel="preload" as="script" href="./heheda/js/main.js">
+	<!---资源预加载配置(图片)-->
+	<link rel="preload" as="image" href="./heheda/image/001.png" type="image/png">
+	<link rel="preload" as="image" href="./heheda/image/002.png" type="image/png">
+	<link rel="preload" as="image" href="./heheda/image/003.png" type="image/png">
+	<link rel="preload" as="image" href="./heheda/image/004.png" type="image/png">
+	<link rel="preload" as="image" href="./heheda/image/005.png" type="image/png">
+	<link rel="preload" as="image" href="./heheda/image/006.png" type="image/png">
+	<link rel="preload" as="image" href="./heheda/image/007.png" type="image/png">
+	<link rel="preload" as="image" href="./heheda/image/008.png" type="image/png">
 	<title>赵彤刚的工具箱</title>
 	<!--PWA配置-->
 	<link rel='manifest' href='./manifest.json'>
@@ -79,57 +94,57 @@
 		crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body title="久违了我的朋友，欢迎您的光临，请尽情探索吧！">
 	<header>
 		<div class="logo">
 			<a href="./"><img src="./heheda/img/logo.png"
-					style="width: 180px;max-width: 200px;height: 50px;max-height: 55px;" alt="赵彤刚的工具箱" /></a>
+					style="width: 180px;max-width: 200px;height: 50px;max-height: 55px;" alt="赵彤刚的工具箱" title="点击重新载入"/></a>
 		</div>
 		<input type="checkbox" checked="true" id="antzone" />
-		<label for="antzone"><img src="./heheda/img/header/align.svg" alt="align" height="40px" width="40px"></label>
+		<label for="antzone"><img src="./heheda/img/header/align.svg" alt="align" height="40px" width="40px" title="菜单"></label>
 		<nav>
 			<ul>
 				<li>
 					<div class="icon" style="background-color: #021bff;">
 						<img src="heheda/img/header/movie.svg" alt="movie" height="18px" width="18px">
-					</div><a href="#!yyst.html">影音视听</a>
+					</div><a title="影音视听" href="#/yyst.html">影音视听</a>
 				<li>
 					<div class="icon" style="background-color: #FFB547;">
 						<img src="heheda/img/header/game.svg" alt="game" height="18px" width="18px">
-					</div><a href="#!yxyl.html">游戏娱乐</a>
+					</div><a title="游戏娱乐" href="#/yxyl.html">游戏娱乐</a>
 				<li>
 					<div class="icon" style="background-color: #FF4242;">
 						<img src="heheda/img/header/originality.svg" alt="originality" height="18px" width="18px">
-					</div><a href="#!yqcy.html">有趣创意</a>
+					</div><a title="有趣创意" href="#/yqcy.html">有趣创意</a>
 				<li>
 					<div class="icon" style="background-color: #33ff00;">
 						<img src="heheda/img/header/student.svg" alt="originality" height="18px" width="18px">
-					</div><a href="#!jyxx.html">教育学习</a>
+					</div><a title="教育学习" href="#/jyxx.html">教育学习</a>
 				<li>
 					<div class="icon" style="background-color: #23C4A4;">
 						<img src="heheda/img/header/tool.svg" alt="tool" height="18px" width="18px">
-					</div><a href="#!cygj.html">常用工具</a>
+					</div><a title="常用工具" href="#/cygj.html">常用工具</a>
 				<li>
 					<div class="icon" style="background-color: #c400ba;">
 						<img src="heheda/img/header/message.svg" alt="message" height="18px" width="18px">
-					</div><a href="#!hdjl.html">互动交流</a>
+					</div><a title="互动交流" href="#/hdjl.html">互动交流</a>
 			</ul>
 		</nav>
 		<div class="footer">
 			<div class="rights">
-				<p class="a_animation">Made by <a href="https://my.heheda.top/" target="_blank" rel="noopener">赵彤刚</a>
+				<p class="a_animation" title="版权所有，禁止盗用">Made by <a href="https://my.heheda.top/" target="_blank" rel="noopener" title="进入我的个人主页">赵彤刚</a>
 				</p>
-				<p class="a_animation"><a href="https://monitor.heheda.top/" target="_blank" rel="noopener">服务器状态</a>
+				<p class="a_animation" title="服务器状态监控"><a href="https://monitor.heheda.top/" target="_blank" rel="noopener">服务器状态</a>
 				</p>
 			</div>
 		</div>
 	</header>
 	<!--#影音视听#-->
-	<section class="main" id="!yyst.html">
+	<section class="main" id="/yyst.html">
 		<div class="div_title">
-			<h1>#影音视听#</h1>
+			<h1 title="影音视听">#影音视听#</h1>
 		</div>
-		<div class="link_item" onclick="window.open('https://music.heheda.top/','_blank')">
+		<div class="link_item" onclick="window.open('https://music.heheda.top/','_blank')" title="免费的在线音乐播放器">
 			<div class="content"> <img src="https://music.heheda.top/favicon.ico" alt="品歌" class="logo" loading=lazy>
 				<div class="title a_animation">
 					<span>品歌</span>
@@ -143,7 +158,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="link_item" onclick="window.open('https://movie.heheda.top/','_blank')">
+		<div class="link_item" onclick="window.open('https://movie.heheda.top/','_blank')" title="免费的在线影视平台">
 			<div class="content"> <img src="https://movie.heheda.top/favicon.ico" alt="风影阁" class="logo" loading=lazy>
 				<div class="title a_animation">
 					<span>风影阁</span>
@@ -158,14 +173,28 @@
 
 			</div>
 		</div>
+		<div class="link_item" onclick="window.open('https://picture.heheda.top/','_blank')" title="免费的在线高清图片">
+			<div class="content"> <img src="https://picture.heheda.top/favicon.ico" alt="雅图轩" class="logo" loading=lazy>
+				<div class="title a_animation">
+					<span>雅图轩</span>
+				</div>
+				<div class="description">免费的在线高清图片</div>
+				<div style="display: inline-block;margin-top: 25px;">
+					<span class="div-span">兼容性：</span>
+					<div class="category" style="background-color:#021bff;color:#021bff"> 电脑</div>
+					<div class="category" style="background-color:#FFB547;color:#FFB547"> 平板</div>
+					<div class="category" style="background-color:#c400ba;color:#c400ba"> 手机</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<!--#游戏娱乐#-->
-	<section class="main" id="!yxyl.html">
+	<section class="main" id="/yxyl.html">
 		<div class="div_title">
-			<h1>#游戏娱乐#</h1>
+			<h1 title="游戏娱乐">#游戏娱乐#</h1>
 		</div>
-		<div class="link_item" onclick="window.open('https://nes.heheda.top/','_blank')">
+		<div class="link_item" onclick="window.open('https://nes.heheda.top/','_blank')" title="一个可以在线玩红白机游戏的地方">
 			<div class="content"> <img src="./heheda/img/header/hbtt.png" alt="红白天堂" class="logo" loading=lazy>
 				<div class="title a_animation">
 					<span>红白天堂【开发中】</span>
@@ -179,7 +208,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="link_item" onclick="window.open('https://rcr.heheda.top/','_blank')">
+		<div class="link_item" onclick="window.open('https://rcr.heheda.top/','_blank')" title="一款可以锻练手速的游戏">
 			<div class="content"> <img src="./heheda/img/header/htjs.png" alt="红毯竞速" class="logo" loading=lazy>
 				<div class="title a_animation">
 					<span>红毯竞速</span>
@@ -193,7 +222,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="link_item" onclick="window.open('https://minecraft.heheda.top/','_blank')">
+		<div class="link_item" onclick="window.open('https://minecraft.heheda.top/','_blank')" title="原汁原味，在线版我的世界">
 			<div class="content"> <img src="./heheda/img/header/wdsj.jpg" alt="我的世界" class="logo" loading=lazy>
 				<div class="title a_animation">
 					<span>我的世界</span>
@@ -205,7 +234,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="link_item" onclick="window.open('https://jhfy.heheda.top/','_blank')">
+		<div class="link_item" onclick="window.open('https://jhfy.heheda.top/','_blank')" title="基于金庸小说改编的文字型游戏">
 			<div class="content"> <img src="./heheda/img/header/jhfy.jpeg" alt="江湖风云" class="logo" loading=lazy>
 				<div class="title a_animation">
 					<span>江湖风云</span>
@@ -219,7 +248,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="link_item" onclick="window.open('https://pokemon.heheda.top/','_blank')">
+		<div class="link_item" onclick="window.open('https://pokemon.heheda.top/','_blank')" title="在线玩经典的口袋妖怪">
 			<div class="content"> <img src="./heheda/img/header/kdyg.jpg" alt="口袋妖怪" class="logo" loading=lazy>
 				<div class="title a_animation">
 					<span>口袋妖怪</span>
@@ -233,7 +262,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="link_item" onclick="window.open('https://ngu.heheda.top/','_blank')">
+		<div class="link_item" onclick="window.open('https://ngu.heheda.top/','_blank')" title="网页版永不言弃">
 			<div class="content"> <img src="https://ngu.heheda.top/images/favicon.ico" alt="永不言弃" class="logo"
 					loading=lazy>
 				<div class="title a_animation">
@@ -246,7 +275,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="link_item" onclick="window.open('https://fn.heheda.top/','_blank')">
+		<div class="link_item" onclick="window.open('https://fn.heheda.top/','_blank')" title="网页版水果忍者，原汁原味的体验在线切水果">
 			<div class="content"> <img src="./heheda/img/header/sgrz.png" alt="水果忍者web版" class="logo" loading=lazy>
 				<div class="title a_animation">
 					<span>水果忍者</span>
@@ -259,7 +288,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="link_item" onclick="window.open('https://pvz.heheda.top/','_blank')">
+		<div class="link_item" onclick="window.open('https://pvz.heheda.top/','_blank')" title="网页版的植物大战僵尸">
 			<div class="content"> <img src="./heheda/img/header/zwdzjs.jpg" alt="植物大战僵尸网页版" class="logo" loading=lazy>
 				<div class="title a_animation">
 					<span>植物大战僵尸</span>
@@ -272,7 +301,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="link_item" onclick="window.open('https://vw.heheda.top/','_blank')">
+		<div class="link_item" onclick="window.open('https://vw.heheda.top/','_blank')" title="以皇室战争为原型的H5小游戏">
 			<div class="content"> <img src="https://vw.heheda.top/icon.png" alt="维京战争网页版" class="logo" loading=lazy>
 				<div class="title a_animation">
 					<span>维京战争</span>
@@ -286,7 +315,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="link_item" onclick="window.open('https://cuber.heheda.top/','_blank')">
+		<div class="link_item" onclick="window.open('https://cuber.heheda.top/','_blank')" title="一个可以在线玩魔方的平台">
 			<div class="content"> <img src="https://cuber.heheda.top/icon.png" alt="" class="logo" loading=lazy>
 				<div class="title a_animation">
 					<span>电子魔方</span>
@@ -303,11 +332,11 @@
 	</section>
 
 	<!--#有趣创意#-->
-	<section class="main" id="!yqcy.html">
+	<section class="main" id="/yqcy.html">
 		<div class="div_title">
-			<h1>#有趣创意#</h1>
+			<h1 title="有趣创意">#有趣创意#</h1>
 		</div>
-		<div class="link_item" onclick="window.open('https://jellyfish.heheda.top/','_blank')">
+		<div class="link_item" onclick="window.open('https://jellyfish.heheda.top/','_blank')" title="看，好大一水母！">
 			<div class="content"> <img src="./heheda/img/header/shuimu.png" alt="" class="logo" loading=lazy>
 				<div class="title a_animation">
 					<span>模拟水母</span>
@@ -321,7 +350,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="link_item" onclick="window.open('https://relax.heheda.top/','_blank')">
+		<div class="link_item" onclick="window.open('https://relax.heheda.top/','_blank')" title="使你放松的在线白噪音程序">
 			<div class="content"> <img src="./heheda/img/header/index.svg" alt="" class="logo" loading=lazy>
 				<div class="title a_animation">
 					<span>聆音</span>
@@ -335,7 +364,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="link_item" onclick="window.open('https://musical.heheda.top/','_blank')">
+		<div class="link_item" onclick="window.open('https://musical.heheda.top/','_blank')" title="免费稳定的HTML悬浮播放器">
 			<div class="content"> <img src="https://musical.heheda.top/favicon.ico" alt="" class="logo" loading=lazy>
 				<div class="title a_animation">
 					<span>音悦台</span>
@@ -349,7 +378,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="link_item" onclick="window.open('https://instrument.heheda.top/','_blank')">
+		<div class="link_item" onclick="window.open('https://instrument.heheda.top/','_blank')" title="关于乐器交互的实验性平台">
 			<div class="content"> <img src="./heheda/img/header/instrument.svg" alt="" class="logo" loading=lazy>
 				<div class="title a_animation">
 					<span>乐器交互</span>
@@ -366,11 +395,11 @@
 	</section>
 
 	<!--#教育学习#-->
-	<section class="main" id="!jyxx.html">
+	<section class="main" id="/jyxx.html">
 		<div class="div_title">
-			<h1>#教育学习#</h1>
+			<h1 title="教育学习">#教育学习#</h1>
 		</div>
-		<div class="link_item" onclick="window.open('https://blackboard.heheda.top/','_blank')">
+		<div class="link_item" onclick="window.open('https://blackboard.heheda.top/','_blank')" title="一款免费且功能强大的电子黑板">
 			<div class="content"> <img src="https://blackboard.heheda.top/icon.png" alt="电子黑板" class="logo"
 					loading=lazy>
 				<div class="title a_animation">
@@ -388,11 +417,39 @@
 	</section>
 
 	<!--#常用工具#-->
-	<section class="main" id="!cygj.html">
+	<section class="main" id="/cygj.html">
 		<div class="div_title">
-			<h1>#常用工具#</h1>
+			<h1 title="常用工具">#常用工具#</h1>
 		</div>
-		<div class="link_item" onclick="window.open('https://audio.heheda.top/','_blank')">
+		<div class="link_item" onclick="window.open('https://unlock-music.heheda.top/','_blank')" title="解锁各大平台加密音频文件">
+			<div class="content"> <img src="https://unlock-music.heheda.top/img/icons/android-chrome-512x512.png" alt="音乐解密" class="logo" loading=lazy>
+				<div class="title a_animation">
+					<span>音乐解密</span>
+				</div>
+				<div class="description">解锁各大平台加密音频文件</div>
+				<div style="display: inline-block;margin-top: 25px;">
+					<span class="div-span">兼容性：</span>
+					<div class="category" style="background-color:#021bff;color:#021bff"> 电脑</div>
+					<div class="category" style="background-color:#FFB547;color:#FFB547"> 平板</div>
+					<div class="category" style="background-color:#c400ba;color:#c400ba"> 手机</div>
+				</div>
+			</div>
+		</div>
+		<div class="link_item" onclick="window.open('https://jiexi.heheda.top/','_blank')" title="免费的抖音视频去水印工具">
+			<div class="content"> <img src="https://jiexi.heheda.top/favicon.png" alt="抖音去水印" class="logo" loading=lazy>
+				<div class="title a_animation">
+					<span>抖音去水印</span>
+				</div>
+				<div class="description">免费的抖音视频去水印工具</div>
+				<div style="display: inline-block;margin-top: 25px;">
+					<span class="div-span">兼容性：</span>
+					<div class="category" style="background-color:#021bff;color:#021bff"> 电脑</div>
+					<div class="category" style="background-color:#FFB547;color:#FFB547"> 平板</div>
+					<div class="category" style="background-color:#c400ba;color:#c400ba"> 手机</div>
+				</div>
+			</div>
+		</div>
+		<div class="link_item" onclick="window.open('https://audio.heheda.top/','_blank')" title="功能强大的在线音频编辑器">
 			<div class="content"> <img src="https://audio.heheda.top/icon.png" alt="" class="logo" loading=lazy>
 				<div class="title a_animation">
 					<span>音频编辑器</span>
@@ -406,7 +463,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="link_item" onclick="window.open('https://music-api.heheda.top/','_blank')">
+		<div class="link_item" onclick="window.open('https://music-api.heheda.top/','_blank')" title="仅供学术研究">
 			<div class="content"> <img src="https://163-music-api-doc.heheda.top/favicon.ico" alt="" class="logo"
 					loading=lazy>
 				<div class="title a_animation">
@@ -421,7 +478,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="link_item" onclick="window.open('https://kms.heheda.top/','_blank')">
+		<div class="link_item" onclick="window.open('https://kms.heheda.top/','_blank')" title="免费激活window系统和office套装">
 			<div class="content"> <img src="https://kms.heheda.top/favicon.ico" alt="" class="logo" loading=lazy>
 				<div class="title a_animation">
 					<span>KMS激活工具</span>
@@ -435,7 +492,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="link_item" onclick="window.open('https://ggso.heheda.top/','_blank')">
+		<div class="link_item" onclick="window.open('https://ggso.heheda.top/','_blank')" title="为学生和科研机构提供的搜索引擎">
 			<div class="content"> <img src="https://ggso.heheda.top/icon/32.png" alt="" class="logo" loading=lazy>
 				<div class="title a_animation">
 					<span>学术之窗</span>
@@ -449,7 +506,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="link_item" onclick="window.open('https://github.heheda.top/','_blank')">
+		<div class="link_item" onclick="window.open('https://github.heheda.top/','_blank')" title="为学生和科研机构提供的Github镜像">
 			<div class="content"> <img src="https://github.heheda.top/fluidicon.png" alt="" class="logo" loading=lazy>
 				<div class="title a_animation">
 					<span>Github中国</span>
@@ -466,11 +523,11 @@
 	</section>
 
 	<!--#互动交流#-->
-	<section class="main" id="!hdjl.html">
+	<section class="main" id="/hdjl.html">
 		<section class="wrapper">
 			<div class="content">
-				<h1>#互动交流#</h1>
-				<p>你有什么好的建议或想法，欢迎在这里交流！！！</p>
+				<h1 title="互动交流">#互动交流#</h1>
+				<p title="欢迎评论">你有什么好的建议或想法，欢迎在这里交流！！！</p>
 			</div>
 			<div class="commentContent">
 				<div id="vcomments"></div>
@@ -490,7 +547,7 @@
 							document.body.appendChild(script);
 						};
 						getScript({
-							src: 'https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js',
+							src: 'https://cdn.jsdelivr.net/npm/valine@1.4.16/dist/Valine.min.js',
 							onload: () => {
 								newValine();
 							}
@@ -520,13 +577,31 @@
 			</script>
 		</section>
 	</section>
-	<a href="#0" class="cd-top">Top</a>
+	<a href="#0" class="cd-top" title="返回顶部">回到顶部</a>
 	<script src="./heheda/js/jquery-3.6.0.min.js"></script>
 	<script src="./heheda/js/main.js"></script>
 	<script type="module">
 		import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
 		const el = document.createElement('pwa-update');
 		document.body.appendChild(el);
+	</script>
+	<!--落叶效果-->
+	<script src="./heheda/js/su.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$('body').wpSuperSnow({
+				flakes: ['./heheda/image/007.png', './heheda/image/006.png', './heheda/image/004.png',
+					'./heheda/image/005.png', './heheda/image/001.png', './heheda/image/003.png',
+					'./heheda/image/002.png', './heheda/image/008.png'
+				],
+				totalFlakes: '100',
+				zIndex: '999999999',
+				maxSize: '30',
+				maxDuration: '20',
+				useFlakeTrans: true
+			});
+		});
+
 	</script>
 	<!--网站标题自动判断-->
 	<script>
