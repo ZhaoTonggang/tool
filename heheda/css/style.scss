@@ -30,16 +30,21 @@ body header {
 	border-radius: 20px;
 	border: 2px solid #03a9f4;
 	box-shadow: 0 10px 40px -10px #03a9f4;
+	padding: 0;
 }
 
 @media (max-width: 1024px) {
 	body header {
 		display: block;
-		width: 100%;
-		min-height: 100px;
+		width: 94.5%;
+		min-height: 90px;
 		padding: 0;
 		position: relative;
 		background-color: var(--color-white);
+		top: 10px;
+		right: 10px;
+		left: 10px;
+		margin-bottom: 40px;
 	}
 }
 
@@ -161,7 +166,7 @@ body header .rights p {
 @media (max-width: 1024px) {
 	body header .logo {
 		float: left;
-		margin: 40px 0 0 30px
+		margin: 20px 0 0 20px
 	}
 
 	body header .footer {
@@ -175,7 +180,7 @@ body header .rights p {
 	body header label {
 		display: block;
 		float: right;
-		margin: 35px 30px 0 0
+		margin: 20px 20px 0 0
 	}
 
 	body header label img {
