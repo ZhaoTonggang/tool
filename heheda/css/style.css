@@ -41,7 +41,7 @@ body header {
     min-height: 90px;
     padding: 0;
     position: relative;
-    background-color: var(--color-white);
+    background-color: var(--color-content);
     top: 10px;
     right: 10px;
     left: 10px;
