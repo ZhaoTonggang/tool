@@ -22,13 +22,13 @@ body header {
   width: 230px;
   height: auto;
   background-color: var(--color-content);
-  float: left;
   overflow: hidden;
   text-align: center;
   border-radius: 20px;
   border: 2px solid #03a9f4;
   box-shadow: 0 0 20px #03a9f4;
   box-sizing: border-box;
+  z-index: 99;
 }
 
 @media (max-width: 1024px) {
