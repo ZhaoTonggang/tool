@@ -1,3 +1,7 @@
+*{
+	padding: 0;
+	margin: 0;
+}
 body,
 html {
 	scroll-behavior: smooth;
@@ -5,13 +9,6 @@ html {
 
 body {
 	background-color: var(--color-white);
-	margin: 0
-}
-
-ul,
-li {
-	padding: 0;
-	margin: 0
 }
 
 body header {
@@ -25,24 +22,21 @@ body header {
 	background-color: var(--color-content);
 	float: left;
 	overflow: hidden;
-	z-index: 9999;
 	text-align: center;
 	border-radius: 20px;
 	border: 2px solid #03a9f4;
-	box-shadow: 0 10px 40px -10px #03a9f4;
-	padding: 0;
+	box-shadow: 0 0 20px #03a9f4;
+	box-sizing: border-box;
 }
 
 @media (max-width: 1024px) {
 	body header {
 		display: block;
-		width: 94.5%;
+		width: 95%;
 		min-height: 90px;
-		padding: 0;
 		position: relative;
 		background-color: var(--color-content);
 		top: 10px;
-		right: 10px;
 		left: 10px;
 		margin-bottom: 40px;
 	}
@@ -52,6 +46,7 @@ body header {
 	width: 100%;
 	height: 100%;
 	padding-left: 250px;
+	padding-right: 20px;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -75,7 +70,6 @@ body header {
 	font-family: YouYuan, KaiTi, Microsoft Yahei;
 	color: var(--color-a);
 	font-weight: bold;
-	margin: 0;
 }
 
 @media (max-width: 1024px) {
@@ -217,7 +211,8 @@ body header .rights p {
 		font-size: 18px;
 		font-weight: bolder;
 		text-decoration: none;
-		border-bottom: 5px solid var(--color-white);
+		border-top: 5px ridge var(--color-white);
+		border-bottom: 5px ridge var(--color-white);
 		background-color: var(--color-blue);
 		border-radius: 30px;
 	}
@@ -240,7 +235,7 @@ body header .rights p {
 	height: 250px;
 	border-radius: 20px;
 	border: 2px solid rgb(43, 255, 0);
-	box-shadow: 0 10px 40px -10px rgb(94, 255, 0);
+	box-shadow: 0 0 20px rgb(94, 255, 0);
 	background-color: var(--color-content);
 	padding: 20px 25px;
 	-webkit-transition: 0.5s linear;
@@ -248,7 +243,7 @@ body header .rights p {
 }
 
 .link_item .content:hover {
-	box-shadow: 0 10px 40px -10px rgb(98, 0, 255);
+	box-shadow: 0 0 20px rgb(98, 0, 255);
 	border: 2px solid rgb(76, 0, 255);
 	transform: translate3d(0px, -8px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
 	transform-style: preserve-3d;
@@ -288,7 +283,6 @@ body header .rights p {
 	color: #2196f3;
 	display: inline-block;
 	overflow: visible;
-	margin: 0px;
 	padding: 5px 10px;
 	border-radius: 20px;
 	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7));
@@ -373,9 +367,9 @@ body header .rights p {
 /*谷歌、safari、qq浏览器、360浏览器滚动条样式*/
 /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
 ::-webkit-scrollbar {
-	width: auto;
-	height: auto;
-	background-color: #202124;
+	width: 10px;
+	height: 100%;
+	background-color: var(--color-content);
 }
 
 /*定义滚动条轨道 内阴影+圆角*/
@@ -416,13 +410,13 @@ html {
 
 /*返回顶部按钮*/
 .cd-top {
-	z-index: 99999;
-	display: inline-block;
+	z-index: 999;
+	display: block;
 	border-radius: 55px 55px 10px 55px;
 	height: 40px;
 	width: 40px;
 	position: fixed;
-	bottom: 40px;
+	bottom: 30px;
 	right: 10px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 	/* image replacement properties */
