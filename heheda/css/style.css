@@ -274,8 +274,6 @@ body header .rights p {
 }
 
 .link_item .content .category {
-  background-color: #2196f3;
-  color: #2196f3;
   display: inline-block;
   overflow: visible;
   padding: 5px 10px;
@@ -283,6 +281,21 @@ body header .rights p {
   background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7));
   font-weight: 500;
   font-size: 12px;
+}
+
+.computer {
+  background-color: #021bff;
+  color: #021bff;
+}
+
+.pad {
+  background-color: #FFB547;
+  color: #FFB547;
+}
+
+.mobile {
+  background-color: #c400ba;
+  color: #c400ba;
 }
 
 @media (max-width: 1250px) {
