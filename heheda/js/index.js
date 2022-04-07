@@ -1,8 +1,8 @@
 // 评论功能
 new Valine({
 	el: '#vcomments',
-	appId: 'mx44kXeIb2sGz9pzIuCMu7sF-gzGzoHsz',
-	appKey: 's4dVnwsyq7rEy8X3vW2jTOhR',
+	appId: 'sLz1YGx1KO43eapCDo5LREE9-MdYXbMMI',
+	appKey: 'mL0otwz7tEuTmPlA1xjzzteS',
 	placeholder: '请留下你来过的足迹！！！',
 	avatar: 'wavatar',
 	meta: ['nick', 'mail', 'link'],
