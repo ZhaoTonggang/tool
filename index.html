@@ -65,6 +65,8 @@
 		<meta name="mobile-web-app-capable" content="yes" />
 		<!--图标设置-->
 		<link rel="apple-touch-icon" sizes="192x192" href="./heheda/img/icon/192.png" />
+		<link rel="shortcut icon" type="image/png" sizes="16x16" href="./heheda/img/icon/16.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="./heheda/img/icon/192.png" />
 		<link rel="icon" type="image/png" sizes="128x128" href="./heheda/img/icon/128.png" />
 		<link rel="icon" type="image/png" sizes="144x144" href="./heheda/img/icon/144.png" />
 		<link rel="icon" type="image/png" sizes="256x256" href="./heheda/img/icon/256.png" />
@@ -557,25 +559,29 @@
 					<h1 title="互动交流">#互动交流#</h1>
 					<p title="欢迎评论">你有什么好的建议或想法，欢迎在这里交流！！！</p>
 				</div>
-				<div id="vcomments" class="commentContent"></div>
-				<p>
-					<span id="/" class="leancloud_visitors" data-flag-title="访客数量">
-						<em class="post-meta-item-text">访客数量：</em>
-						<i class="leancloud-visitors-count">1000000+</i>
-					</span>
+				<div id="vcomments" class="commentContent">
+					<p>(つ ェ ⊂)相关模块正在加载...</p>
+				</div>
+				<p id="hitokoto">(*゜ロ゜)ノ一言加载中...</p>
+				<p id="/" class="leancloud_visitors" data-flag-title="访客数量">本站已被浏览:<span
+						class="leancloud-visitors-count">1000000+</span>次
 				</p>
 			</section>
 		</section>
 		<div class="cd-top" title="返回顶部">回到顶部</div>
 		<div class="sure-s" onclick="call()" title="喜欢，就分享一下吧">分享</div>
-		<script src="./heheda/js/jquery-3.6.0.min.js"></script>
-		<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
-		<script src="./heheda/js/main.js"></script>
 		<!-- 页面逻辑 -->
 		<script src="./heheda/js/index.js"></script>
-
+		<!-- jQuery -->
+		<script src="./heheda/js/jquery-3.6.0.min.js"></script>
+		<!-- 返回顶部 -->
+		<script src="./heheda/js/main.js"></script>
+		<!-- 评论功能 -->
+		<script src="https://unpkg.com/valine@1.4.18/dist/Valine.min.js"></script>
 		<!--落叶效果依赖-->
 		<script src="./heheda/js/su.js"></script>
+		<!--一言API-->
+		<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
 		<!--分享按钮依赖-->
 		<script src="./heheda/js/NativeShare.js"></script>
 		<!--音乐播放器-->
@@ -591,6 +597,9 @@
 		<script async="async"
 			src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3670070169085381"
 			crossorigin="anonymous"></script>
+		<noscript>
+			<h1>本站功能实现依赖了大量JS，您的浏览器不支持或未启用JS！</h1>
+		</noscript>
 	</body>
 
 </html>
