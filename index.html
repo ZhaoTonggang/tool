@@ -72,6 +72,7 @@
 		<link rel="icon" type="image/png" sizes="256x256" href="./heheda/img/icon/256.png" />
 		<link rel="icon" type="image/png" sizes="512x512" href="./heheda/img/icon/512.png" />
 		<link rel="stylesheet" type="text/css" href="./heheda/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="https://www.blog.heheda.top/zplayer/css/zplayer.css" />
 		<!---资源预加载配置(css)-->
 		<link rel="preload" as="style" href="./heheda/css/style.css" />
 		<!---资源预加载配置(js)-->
@@ -147,7 +148,7 @@
 				<h1 title="影音视听">#影音视听#</h1>
 			</div>
 			<div class="link_item" onclick="window.open('https://music.heheda.top/','_blank')" title="免费的在线音乐播放器">
-				<div class="content"> <img src="https://music.heheda.top/favicon.ico" alt="品歌" class="logo"
+				<div class="content"> <img src="./heheda/img/fav/music.ico" alt="品歌" class="logo"
 						loading=lazy>
 					<div class="title a_animation">
 						<span>品歌</span>
@@ -162,7 +163,7 @@
 				</div>
 			</div>
 			<div class="link_item" onclick="window.open('https://movie.heheda.top/','_blank')" title="免费的在线影视平台">
-				<div class="content"> <img src="https://movie.heheda.top/favicon.ico" alt="风影阁" class="logo"
+				<div class="content"> <img src="./heheda/img/fav/movie.ico" alt="风影阁" class="logo"
 						loading=lazy>
 					<div class="title a_animation">
 						<span>风影阁</span>
@@ -178,7 +179,7 @@
 				</div>
 			</div>
 			<div class="link_item" onclick="window.open('https://picture.heheda.top/','_blank')" title="免费的在线高清图片">
-				<div class="content"> <img src="https://picture.heheda.top/favicon.ico" alt="雅图轩" class="logo"
+				<div class="content"> <img src="./heheda/img/fav/picture.ico" alt="雅图轩" class="logo"
 						loading=lazy>
 					<div class="title a_animation">
 						<span>雅图轩</span>
@@ -193,7 +194,7 @@
 				</div>
 			</div>
 			<div class="link_item" onclick="window.open('https://show.heheda.top/','_blank')" title="免费的在线视频解析平台">
-				<div class="content"> <img src="https://show.heheda.top/icons/512x512.png" alt="影视解析" class="logo"
+				<div class="content"> <img src="./heheda/img/fav/show.png" alt="影视解析" class="logo"
 						loading=lazy>
 					<div class="title a_animation">
 						<span>影视解析</span>
@@ -283,7 +284,7 @@
 				</div>
 			</div>
 			<div class="link_item" onclick="window.open('https://ngu.heheda.top/','_blank')" title="网页版永不言弃">
-				<div class="content"> <img src="https://ngu.heheda.top/images/favicon.ico" alt="永不言弃" class="logo"
+				<div class="content"> <img src="./heheda/img/fav/ngu.ico" alt="永不言弃" class="logo"
 						loading=lazy>
 					<div class="title a_animation">
 						<span>永不言弃</span>
@@ -570,6 +571,7 @@
 		</section>
 		<div class="cd-top" title="返回顶部">回到顶部</div>
 		<div class="sure-s" onclick="call()" title="喜欢，就分享一下吧">分享</div>
+		<div id="player3"></div>
 		<!-- jQuery -->
 		<script src="./heheda/js/jquery-3.6.0.min.js"></script>
 		<!-- 返回顶部 -->
@@ -585,8 +587,8 @@
 		<!--一言API-->
 		<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
 		<!--音乐播放器-->
-		<div id="music" key="60bd6d679ce38" api="https://musical.heheda.top"></div>
-		<script async="async" id="xplayer" src="https://musical.heheda.top/api/PlayerJs/id/60bd6d679ce38"></script>
+		<script src="https://www.blog.heheda.top/zplayer/js/zplayer.js" defer></script>
+		<script src="https://www.blog.heheda.top/zplayers.js" defer></script>
 		<!-- PWA配置 -->
 		<script async="async" type="module">
 			import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
