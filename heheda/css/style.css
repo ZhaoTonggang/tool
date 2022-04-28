@@ -29,19 +29,19 @@ body header {
 	border: 2px solid #03a9f4;
 	box-shadow: 0 0 20px #03a9f4;
 	box-sizing: border-box;
-	z-index: 99;
+	z-index: 9;
 }
 
 @media (max-width: 1024px) {
 	body header {
 		display: block;
-		width: 95%;
-		min-height: 90px;
+		width: 97%;
+		height: auto;
 		position: relative;
 		background-color: var(--color-content);
 		top: 10px;
-		left: 10px;
-		margin-bottom: 40px;
+		left: 0;
+		margin: 0 auto 40px auto;
 	}
 }
 
@@ -52,7 +52,7 @@ body header {
 	padding-right: 20px;
 	box-sizing: border-box;
 	position: relative;
-	z-index: 55;
+	z-index: 5;
 	margin-bottom: 30px;
 	clear: both;
 	display: flex;
@@ -73,12 +73,6 @@ body header {
 	font-weight: bold;
 }
 
-@media (max-width: 1024px) {
-	.main {
-		padding-left: 0;
-	}
-}
-
 .a_animation span {
 	position: relative;
 	font-family: YouYuan, KaiTi, Microsoft Yahei;
@@ -86,8 +80,22 @@ body header {
 	color: var(--color-a);
 }
 
-body header .logo {
+.hlogo {
 	margin-top: 30px;
+}
+
+.hlogo a{
+	font-family: YouYuan, KaiTi, Microsoft Yahei;
+	font-size: 28px;
+	font-weight: bold;
+	color: #03a9f4;
+	text-decoration: none;
+	
+}
+
+.hlogo p{
+	color: #03a9f4;
+	font-weight: bold;
 }
 
 body header input {
@@ -145,21 +153,20 @@ body header nav ul li a.selected {
 
 body header .footer {
 	position: absolute;
-	bottom: 15px;
-	margin-bottom: 5px;
-	margin-left: 60px;
+	bottom: 20px;
+	margin-left: 55px;
 }
 
-body header .rights p {
+body header .footer p {
 	color: var(--color-a);
 	font-size: 11px;
 	letter-spacing: 1px;
 }
 
 @media (max-width: 1024px) {
-	body header .logo {
+	.hlogo {
 		float: left;
-		margin: 20px 0 0 20px;
+		margin: 10px 0 10px 15px;
 	}
 
 	body header .footer {
@@ -173,7 +180,7 @@ body header .rights p {
 	body header label {
 		display: block;
 		float: right;
-		margin: 20px 20px 0 0;
+		margin: 15px 15px 0 0;
 	}
 
 	body header label img {
@@ -183,7 +190,7 @@ body header .rights p {
 
 	body header nav {
 		width: 100%;
-		z-index: 999;
+		z-index: 19;
 	}
 
 	body header nav ul {
@@ -239,15 +246,15 @@ body header .rights p {
 	box-shadow: 0 0 20px #5eff00;
 	background-color: var(--color-content);
 	padding: 20px 25px;
-	transition: 0.5s linear;
+	transition: 1s linear;
 }
 
 .link_item .content:hover {
 	box-shadow: 0 0 20px #6200ff;
 	border: 2px solid #4c00ff;
-	transform: translate3d(0px, -8px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+	transform: translate3d(-8px, -8px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(360deg) skew(0deg, 0deg);
 	transform-style: preserve-3d;
-	transition: 0.2s linear;
+	transition: 1s linear;
 	cursor: pointer;
 }
 
@@ -310,15 +317,14 @@ body header .rights p {
 
 @media (max-width: 1024px) {
 	.main {
-		padding-left: 15px;
-		padding-right: 15px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 
 	.link_item {
 		width: 48%;
 		margin: 0 auto;
 		margin-top: 30px;
-		margin-left: 0;
 	}
 }
 
@@ -338,8 +344,7 @@ body header .rights p {
 
 .wrapper {
 	width: 100%;
-	margin-left: 1.5rem;
-	margin-right: 1.5rem;
+	margin-left: 30px;
 }
 
 .content {
@@ -421,7 +426,7 @@ html {
 
 /*返回顶部按钮*/
 .cd-top {
-	z-index: 500;
+	z-index: 10;
 	display: block;
 	border-radius: 55px 55px 55px 55px;
 	height: 40px;
@@ -480,7 +485,7 @@ html {
 
 /*分享按钮*/
 .sure-s {
-	z-index: 999;
+	z-index: 19;
 	display: block;
 	border-radius: 55px 55px 10px 55px;
 	height: 40px;
