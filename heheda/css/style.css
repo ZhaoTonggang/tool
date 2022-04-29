@@ -347,6 +347,12 @@ body header .footer p {
 	margin-left: 30px;
 }
 
+@media (max-width:600px) {
+	.wrapper{
+		margin: 0 15px;
+	}
+}
+
 .content {
 	color: #4b4848;
 	text-align: center;
