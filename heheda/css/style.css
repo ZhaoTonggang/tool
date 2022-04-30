@@ -1,13 +1,11 @@
 @charset "UTF-8";
 
-* {
+*,
+html {
 	padding: 0;
 	margin: 0;
-}
-
-body,
-html {
 	scroll-behavior: smooth;
+	font-family: YouYuan, KaiTi, Microsoft Yahei;
 }
 
 body {
@@ -32,17 +30,8 @@ body header {
 	z-index: 9;
 }
 
-@media (max-width: 1024px) {
-	body header {
-		display: block;
-		width: 97%;
-		height: auto;
-		position: relative;
-		background-color: var(--color-content);
-		top: 10px;
-		left: 0;
-		margin: 0 auto 40px auto;
-	}
+a {
+	text-decoration: none;
 }
 
 .main {
@@ -68,14 +57,12 @@ body header {
 }
 
 .main .div_title h1 {
-	font-family: YouYuan, KaiTi, Microsoft Yahei;
 	color: var(--color-a);
 	font-weight: bold;
 }
 
 .a_animation span {
 	position: relative;
-	font-family: YouYuan, KaiTi, Microsoft Yahei;
 	font-weight: bold;
 	color: var(--color-a);
 }
@@ -84,16 +71,14 @@ body header {
 	margin-top: 30px;
 }
 
-.hlogo a{
-	font-family: YouYuan, KaiTi, Microsoft Yahei;
+.hlogo a {
 	font-size: 28px;
 	font-weight: bold;
 	color: #03a9f4;
-	text-decoration: none;
-	
 }
 
-.hlogo p{
+.hlogo p {
+	font-size: 15px;
 	color: #03a9f4;
 	font-weight: bold;
 }
@@ -139,8 +124,7 @@ body header nav ul li a {
 	margin-left: 10px;
 	color: var(--color-a);
 	font-size: 16px;
-	font-weight: 600;
-	text-decoration: none;
+	font-weight: bold;
 	letter-spacing: 1px;
 }
 
@@ -161,73 +145,6 @@ body header .footer p {
 	color: var(--color-a);
 	font-size: 11px;
 	letter-spacing: 1px;
-}
-
-@media (max-width: 1024px) {
-	.hlogo {
-		float: left;
-		margin: 10px 0 10px 15px;
-	}
-
-	body header .footer {
-		display: none;
-	}
-
-	body header input {
-		display: none;
-	}
-
-	body header label {
-		display: block;
-		float: right;
-		margin: 15px 15px 0 0;
-	}
-
-	body header label img {
-		width: 40px;
-		height: 40px;
-	}
-
-	body header nav {
-		width: 100%;
-		z-index: 19;
-	}
-
-	body header nav ul {
-		list-style: none;
-		position: relative;
-		width: 100%;
-		margin-left: 0px;
-	}
-
-	body header nav ul li {
-		margin-bottom: 0px;
-	}
-
-	body header nav ul li .icon {
-		display: none;
-	}
-
-	body header nav ul li a {
-		display: block;
-		font-family: YouYuan, KaiTi, Microsoft Yahei;
-		width: 100%;
-		margin-left: 0px;
-		padding: 15px 0;
-		text-align: center;
-		color: var(--color-a);
-		font-size: 18px;
-		font-weight: bolder;
-		text-decoration: none;
-		border-top: 5px ridge var(--color-white);
-		border-bottom: 5px ridge var(--color-white);
-		background-color: var(--color-blue);
-		border-radius: 30px;
-	}
-
-	:checked~nav {
-		display: none;
-	}
 }
 
 .link_item {
@@ -309,6 +226,11 @@ body header .footer p {
 	color: #c400ba;
 }
 
+.wrapper {
+	width: 100%;
+	margin-left: 30px;
+}
+
 @media (max-width: 1250px) {
 	.link_item {
 		width: 45%;
@@ -316,6 +238,17 @@ body header .footer p {
 }
 
 @media (max-width: 1024px) {
+	body header {
+		display: block;
+		width: 97%;
+		height: auto;
+		position: relative;
+		background-color: var(--color-content);
+		top: 10px;
+		left: 0;
+		margin: 0 auto 40px auto;
+	}
+
 	.main {
 		padding-left: 10px;
 		padding-right: 10px;
@@ -326,9 +259,76 @@ body header .footer p {
 		margin: 0 auto;
 		margin-top: 30px;
 	}
+
+	.hlogo {
+		float: left;
+		margin: 10px 0 10px 15px;
+	}
+
+	body header .footer {
+		display: none;
+	}
+
+	body header input {
+		display: none;
+	}
+
+	body header label {
+		display: block;
+		float: right;
+		margin: 15px 15px 0 0;
+	}
+
+	body header label img {
+		width: 40px;
+		height: 40px;
+	}
+
+	body header nav {
+		width: 100%;
+		z-index: 19;
+	}
+
+	body header nav ul {
+		list-style: none;
+		position: relative;
+		width: 100%;
+		margin-left: 0px;
+	}
+
+	body header nav ul li {
+		margin-bottom: 0px;
+	}
+
+	body header nav ul li .icon {
+		display: none;
+	}
+
+	body header nav ul li a {
+		display: block;
+		width: 100%;
+		margin-left: 0px;
+		padding: 15px 0;
+		text-align: center;
+		color: var(--color-a);
+		font-size: 18px;
+		font-weight: bold;
+		border-top: 5px ridge var(--color-white);
+		border-bottom: 5px ridge var(--color-white);
+		background-color: var(--color-blue);
+		border-radius: 30px;
+	}
+
+	.wrapper {
+		margin: 0;
+	}
+
+	:checked~nav {
+		display: none;
+	}
 }
 
-@media (max-width: 600px) {
+@media (max-width:600px) {
 	.main {
 		padding-left: 0px;
 		padding-right: 0px;
@@ -340,15 +340,8 @@ body header .footer p {
 		margin-left: 20px;
 		margin-right: 20px;
 	}
-}
 
-.wrapper {
-	width: 100%;
-	margin-left: 30px;
-}
-
-@media (max-width:600px) {
-	.wrapper{
+	.wrapper {
 		margin: 0 15px;
 	}
 }
@@ -361,7 +354,6 @@ body header .footer p {
 }
 
 .content h1 {
-	font-family: YouYuan, KaiTi, Microsoft Yahei;
 	font-size: 24px;
 	color: var(--color-a);
 	text-align: center;
