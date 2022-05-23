@@ -369,7 +369,7 @@ body header .footer p {
 
 .commentContent {
 	margin: 40px 10px 0 10px;
-	max-width: 980px;
+	max-width: 100%;
 	text-align: center;
 }
 
