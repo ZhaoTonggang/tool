@@ -149,7 +149,7 @@ body header .footer p {
 
 .link_item {
 	width: 30%;
-	max-width: 450px;
+	max-width: 350px;
 	margin-left: 30px;
 	margin-top: 30px;
 }
@@ -367,8 +367,8 @@ body header .footer p {
 	text-align: center;
 }
 
-.wrapper .commentContent {
-	margin: 40px auto 0 auto;
+.commentContent {
+	margin: 40px 10px 0 10px;
 	max-width: 980px;
 	text-align: center;
 }
