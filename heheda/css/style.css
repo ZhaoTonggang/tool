@@ -50,13 +50,13 @@ a {
 	justify-content: space-evenly;
 }
 
-.main .div_title {
+.div_title {
 	width: 100%;
 	text-align: center;
 	margin: 20px 0 0 0;
 }
 
-.main .div_title h1 {
+.div_title h1 {
 	color: var(--color-a);
 	font-weight: bold;
 }
@@ -81,10 +81,6 @@ a {
 	font-size: 15px;
 	color: #03a9f4;
 	font-weight: bold;
-}
-
-body header input {
-	display: none;
 }
 
 body header label {
@@ -187,11 +183,6 @@ body header .footer p {
 	font-weight: 550;
 	font-size: 19px;
 	margin-top: 12px;
-}
-
-.link_item .content .title img {
-	width: 18px;
-	height: 18px;
 }
 
 .link_item .content .description {
@@ -424,7 +415,7 @@ html {
 
 /*返回顶部按钮*/
 .cd-top {
-	z-index: 10;
+	z-index: 999;
 	display: block;
 	border-radius: 55px 55px 55px 55px;
 	height: 40px;
@@ -481,24 +472,6 @@ html {
 	}
 }
 
-/*分享按钮*/
-.sure-s {
-	z-index: 19;
-	display: block;
-	border-radius: 55px 55px 10px 55px;
-	height: 40px;
-	width: 40px;
-	position: fixed;
-	bottom: 10px;
-	right: 10px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-	overflow: hidden;
-	cursor: pointer;
-	text-indent: 100%;
-	white-space: nowrap;
-	background: url(../image/fenxiang.svg) #008cff no-repeat center/70%;
-}
-
 /* 一言模块 */
 #hitokoto {
 	text-align: center;
@@ -528,5 +501,3 @@ html {
 		--color-blue: #202124;
 	}
 }
-
-/*# sourceMappingURL=style.css.map */
