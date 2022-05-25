@@ -83,7 +83,8 @@ a {
 	font-weight: bold;
 }
 
-body header label {
+body header label,
+body header input {
 	display: none;
 }
 
