@@ -278,7 +278,9 @@ body header .footer p {
 
 	body header nav {
 		width: 100%;
+		height: 490px;
 		z-index: 19;
+		transition: all 1s ease;
 	}
 
 	body header nav ul {
@@ -316,7 +318,8 @@ body header .footer p {
 	}
 
 	:checked~nav {
-		display: none;
+		height: 0;
+		transition: all 1s ease;
 	}
 }
 
