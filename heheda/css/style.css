@@ -34,6 +34,10 @@ a {
 	text-decoration: none;
 }
 
+p {
+	cursor: default;
+}
+
 .main {
 	width: 100%;
 	height: 100%;
@@ -59,6 +63,7 @@ a {
 .div_title h1 {
 	color: var(--color-a);
 	font-weight: bold;
+	cursor: default;
 }
 
 .a_animation span {
@@ -223,124 +228,6 @@ body header .footer p {
 	margin-left: 30px;
 }
 
-@media (max-width: 1250px) {
-	.link_item {
-		width: 45%;
-	}
-}
-
-@media (max-width: 1024px) {
-	body header {
-		display: block;
-		width: 97%;
-		height: auto;
-		position: relative;
-		background-color: var(--color-content);
-		top: 10px;
-		left: 0;
-		margin: 0 auto 40px auto;
-	}
-
-	.main {
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-
-	.link_item {
-		width: 48%;
-		margin: 0 auto;
-		margin-top: 30px;
-	}
-
-	.hlogo {
-		float: left;
-		margin: 10px 0 10px 15px;
-	}
-
-	body header .footer {
-		display: none;
-	}
-
-	body header input {
-		display: none;
-	}
-
-	body header label {
-		display: block;
-		float: right;
-		margin: 15px 15px 0 0;
-	}
-
-	body header label img {
-		width: 40px;
-		height: 40px;
-	}
-
-	body header nav {
-		width: 100%;
-		max-height: 490px;
-		z-index: 19;
-		transition: max-height 1s ease;
-	}
-
-	body header nav ul {
-		list-style: none;
-		position: relative;
-		width: 100%;
-		margin-left: 0px;
-	}
-
-	body header nav ul li {
-		margin-bottom: 0px;
-	}
-
-	body header nav ul li .icon {
-		display: none;
-	}
-
-	body header nav ul li a {
-		display: block;
-		width: 100%;
-		margin-left: 0px;
-		padding: 15px 0;
-		text-align: center;
-		color: var(--color-a);
-		font-size: 18px;
-		font-weight: bold;
-		border-top: 5px ridge var(--color-white);
-		border-bottom: 5px ridge var(--color-white);
-		background-color: var(--color-blue);
-		border-radius: 30px;
-	}
-
-	.wrapper {
-		margin: 0;
-	}
-
-	:checked~nav {
-		max-height: 0;
-		transition: max-height 1s ease;
-	}
-}
-
-@media (max-width:600px) {
-	.main {
-		padding-left: 0px;
-		padding-right: 0px;
-	}
-
-	.link_item {
-		width: 100%;
-		max-width: 560px;
-		margin-left: 20px;
-		margin-right: 20px;
-	}
-
-	.wrapper {
-		margin: 0 15px;
-	}
-}
-
 .content {
 	color: #4b4848;
 	text-align: center;
@@ -348,22 +235,15 @@ body header .footer p {
 	box-sizing: border-box;
 }
 
-.content h1 {
-	font-size: 24px;
-	color: var(--color-a);
-	text-align: center;
-}
-
 .content p {
 	color: var(--color-a);
 	font-size: 18px;
 	line-height: 38px;
-	margin-bottom: 15px;
 	text-align: center;
 }
 
 .commentContent {
-	margin: 40px 10px 0 10px;
+	margin: 10px 10px 0 10px;
 	max-width: 100%;
 	text-align: center;
 }
@@ -418,14 +298,14 @@ html {
 }
 
 /*返回顶部按钮*/
-.cd-top {
+#cd-top {
 	z-index: 999;
 	display: block;
 	border-radius: 55px 55px 55px 55px;
-	height: 40px;
-	width: 40px;
+	height: 60px;
+	width: 60px;
 	position: fixed;
-	bottom: 60px;
+	bottom: 10px;
 	right: 10px;
 	cursor: pointer;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
@@ -434,46 +314,14 @@ html {
 	white-space: nowrap;
 	background: #008cff url(../img/header/cd-top.svg) no-repeat center 50%;
 	visibility: hidden;
-	opacity: 0;
-	transition: opacity 0.3s 0s, visibility 0s 0.3s;
-}
-
-.cd-top.cd-is-visible,
-.cd-top.cd-fade-out,
-.no-touch .cd-top:hover {
-	transition: opacity 0.3s 0s, visibility 0s 0s;
-}
-
-.cd-top.cd-is-visible {
-	/* the button becomes visible */
-	visibility: visible;
-	opacity: 1;
-}
-
-.cd-top.cd-fade-out {
-	/* if the user keeps scrolling down, the button is out of focus and becomes less visible */
 	opacity: 0.5;
+	transition: opacity 1s 0s;
 }
 
-.no-touch .cd-top:hover {
+#cd-top:hover {
 	background-color: #ffee00;
 	opacity: 1;
-}
-
-@media only screen and (min-width: 768px) {
-	.cd-top {
-		right: 10px;
-		bottom: 60px;
-	}
-}
-
-@media only screen and (min-width: 1024px) {
-	.cd-top {
-		height: 60px;
-		width: 60px;
-		right: 10px;
-		bottom: 60px;
-	}
+	transition: opacity 1s 0s;
 }
 
 /* 一言模块 */
@@ -494,6 +342,133 @@ html {
 	--color-content: rgb(226, 255, 254);
 	--color-a: #000000;
 	--color-blue: #03a9f4;
+}
+
+/* 移动端适配 */
+@media (max-width: 1250px) {
+	.link_item {
+		width: 45%;
+	}
+}
+
+@media (max-width: 1024px) {
+	body header {
+		display: block;
+		width: 97%;
+		height: auto;
+		position: relative;
+		background-color: var(--color-content);
+		top: 10px;
+		left: 0;
+		margin: 0 auto 40px auto;
+	}
+
+	.main {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.link_item {
+		width: 48%;
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+
+	.hlogo {
+		float: left;
+		margin: 10px 0 10px 15px;
+	}
+
+	body header .footer {
+		display: none;
+	}
+
+	body header input {
+		display: none;
+	}
+
+	body header label {
+		display: block;
+		float: right;
+		margin: 15px 15px 0 0;
+	}
+
+	body header label img {
+		width: 40px;
+		height: 40px;
+		cursor: pointer;
+	}
+
+	body header nav {
+		width: 100%;
+		max-height: 600px;
+		z-index: 19;
+		transition: max-height 1s ease;
+	}
+
+	body header nav ul {
+		list-style: none;
+		position: relative;
+		width: 100%;
+		margin-left: 0px;
+	}
+
+	body header nav ul li {
+		margin-bottom: 0px;
+	}
+
+	body header nav ul li .icon {
+		display: none;
+	}
+
+	body header nav ul li a {
+		display: block;
+		width: 100%;
+		margin-left: 0px;
+		padding: 15px 0;
+		text-align: center;
+		color: var(--color-a);
+		font-size: 18px;
+		font-weight: bold;
+		border-top: 5px ridge var(--color-white);
+		border-bottom: 5px ridge var(--color-white);
+		background-color: var(--color-blue);
+		border-radius: 30px;
+	}
+
+	.wrapper {
+		margin: 0;
+	}
+
+	:checked~nav {
+		max-height: 0;
+		transition: max-height 1s ease;
+	}
+
+	#cd-top {
+		height: 40px;
+		width: 40px;
+		right: 10px;
+		bottom: 10px;
+	}
+}
+
+@media (max-width:600px) {
+	.main {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.link_item {
+		width: 100%;
+		max-width: 560px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.wrapper {
+		margin: 0 15px;
+	}
 }
 
 /*深色模式*/

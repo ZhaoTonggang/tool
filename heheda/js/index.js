@@ -1,5 +1,5 @@
 // 获取基础信息
-var title = document.title;
+let title = document.title;
 if (!navigator.share) {
 	document.getElementById("fxbz").style.display = "none";
 }
@@ -24,7 +24,7 @@ new Valine({
 
 // 点击邮件中的链接跳转至相应评论
 if (window.location.hash) {
-	var checkExist = setInterval(function() {
+	let checkExist = setInterval(function() {
 		if ($(window.location.hash).length) {
 			$('html, body').animate({
 				scrollTop: $(window.location.hash).offset().top - 90
@@ -34,10 +34,9 @@ if (window.location.hash) {
 	}, 100);
 }
 
-
 // 网站标题自动判断
 function istitle() {
-	var isHidden = document.hidden;
+	let isHidden = document.hidden;
 	if (isHidden) {
 		//当窗口不可见
 		document.title = '(つ ェ ⊂)我藏好了哦~';
@@ -50,7 +49,7 @@ function istitle() {
 document.addEventListener('visibilitychange', istitle);
 
 // 分享按钮
-function call(){
+function call() {
 	navigator.share({
 		title: title,
 		url: window.location.href,
@@ -59,6 +58,18 @@ function call(){
 }
 
 //返回顶部
+window.onscroll = function() {
+	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+		document.getElementById("cd-top").style.visibility = "visible";
+	} else {
+		document.getElementById("cd-top").style.visibility = "hidden";
+	}
+}
+
+function cdTop() {
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+}
 
 // 版权信息
 console.log("%c赵彤刚%c版权所有", "font-size:15px;padding:3px;color:white;background:#023047",
