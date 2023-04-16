@@ -7,7 +7,7 @@ if (!navigator.share) {
 // 评论功能
 new Valine({
 	el: '#vcomments',
-	serverURLs: 'https://slz1ygx1.api.lncldglobal.com',
+	serverURLs: 'https://api-valine.heheda.top',
 	appId: 'sLz1YGx1KO43eapCDo5LREE9-MdYXbMMI',
 	appKey: 'mL0otwz7tEuTmPlA1xjzzteS',
 	placeholder: '请留下你来过的足迹！！！',
