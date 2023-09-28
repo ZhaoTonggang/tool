@@ -23,7 +23,7 @@ body header {
 	background-color: var(--color-content);
 	overflow: hidden;
 	text-align: center;
-	border-radius: 20px;
+	border-radius: 15px;
 	border: 2px solid #03a9f4;
 	box-shadow: 0 0 20px #03a9f4;
 	box-sizing: border-box;
@@ -54,19 +54,17 @@ p {
 	justify-content: space-evenly;
 }
 
-.div_title {
-	width: 100%;
-	text-align: center;
-	margin: 20px 0 0 0;
-}
-
-.div_title h1 {
+.h1_title {
 	color: var(--color-a);
 	font-weight: bold;
 	cursor: default;
+	padding-left: 250px;
+	text-align: center;
+	padding-top: 20px;
 }
 
-.a_animation span {
+.a_animation,
+.a_animation a {
 	position: relative;
 	font-weight: bold;
 	color: var(--color-a);
@@ -143,25 +141,18 @@ body header .footer p {
 }
 
 .link_item {
-	width: 30%;
-	max-width: 350px;
-	margin-left: 30px;
-	margin-top: 30px;
-}
-
-.link_item .content {
-	overflow: hidden;
+	width: 20%;
+	color: white;
+	margin: 30px 0 0 30px;
+	border-radius: 15px;
 	text-align: center;
-	height: 250px;
-	border-radius: 20px;
 	border: 2px solid #2bff00;
 	box-shadow: 0 0 20px #5eff00;
 	background-color: var(--color-content);
-	padding: 20px 25px;
-	transition: 0.5s linear;
+	transition: 1s linear;
 }
 
-.link_item .content:hover {
+.link_item:hover {
 	box-shadow: 0 0 20px #6200ff;
 	border: 2px solid #4c00ff;
 	transform: translate3d(0px, -10px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
@@ -172,50 +163,23 @@ body header .footer p {
 	cursor: pointer;
 }
 
+.link_item .content {
+	overflow: hidden;
+	text-align: center;
+	border-radius: 15px;
+}
+
+.item_h2 {
+	margin: 10px auto;
+}
+
+.item_p {
+	margin-bottom: 10px;
+}
+
 .link_item .content .logo {
-	width: 58px;
-	min-width: 58px;
-	min-height: 58px;
-	height: 58px;
-	border-radius: 5px;
-}
-
-.link_item .content .title {
-	font-weight: 550;
-	font-size: 19px;
-	margin-top: 12px;
-}
-
-.link_item .content .description {
-	margin-top: 12px;
-	color: var(--color-a);
-	font-size: 13px;
-	line-height: 18px;
-}
-
-.link_item .content .category {
-	display: inline-block;
-	overflow: visible;
-	padding: 5px 10px;
-	border-radius: 20px;
-	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7));
-	font-weight: 500;
-	font-size: 12px;
-}
-
-.computer {
-	background-color: #021bff;
-	color: #021bff;
-}
-
-.pad {
-	background-color: #FFB547;
-	color: #FFB547;
-}
-
-.mobile {
-	background-color: #c400ba;
-	color: #c400ba;
+	width: 100%;
+	height: 100%;
 }
 
 .wrapper {
@@ -241,11 +205,6 @@ body header .footer p {
 	margin: 10px 10px 0 10px;
 	max-width: 100%;
 	text-align: center;
-}
-
-.div-span {
-	color: var(--color-a);
-	font-size: 15px;
 }
 
 /*谷歌、safari、qq浏览器、360浏览器滚动条样式*/
@@ -294,13 +253,13 @@ html {
 
 /*返回顶部按钮*/
 #cd-top {
-	z-index: 999;
+	z-index: 99999;
 	display: block;
-	border-radius: 55px 55px 55px 55px;
-	height: 60px;
-	width: 60px;
+	border-radius: 50px;
+	height: 50px;
+	width: 50px;
 	position: fixed;
-	bottom: 10px;
+	bottom: 70px;
 	right: 10px;
 	cursor: pointer;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
@@ -342,7 +301,7 @@ html {
 /* 移动端适配 */
 @media (max-width: 1250px) {
 	.link_item {
-		width: 45%;
+		width: 25%;
 	}
 }
 
@@ -363,8 +322,12 @@ html {
 		padding-right: 10px;
 	}
 
+	.h1_title {
+		padding-left: 0px;
+	}
+
 	.link_item {
-		width: 48%;
+		width: 28%;
 		margin: 0 auto;
 		margin-top: 30px;
 	}
@@ -455,8 +418,24 @@ html {
 	}
 
 	.link_item {
-		width: 100%;
-		max-width: 560px;
+		width: 40%;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.wrapper {
+		margin: 0 15px;
+	}
+}
+
+@media (max-width:500px) {
+	.main {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.link_item {
+		width: 80%;
 		margin-left: 20px;
 		margin-right: 20px;
 	}
