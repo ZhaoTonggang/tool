@@ -1,15 +1,25 @@
 @charset "UTF-8";
 
-*,
-html {
+* {
 	padding: 0;
 	margin: 0;
 	scroll-behavior: smooth;
 	font-family: YouYuan, KaiTi, Microsoft Yahei;
 }
 
+body,
+html {
+	height: 100%;
+	width: 100%;
+}
+
 body {
 	background-color: var(--color-white);
+	opacity: 1;
+	-moz-transition: opacity 2s ease-out;
+	-webkit-transition: opacity 2s ease-out;
+	-ms-transition: opacity 2s ease-out;
+	transition: opacity 2s ease-out;
 }
 
 body header {
@@ -26,7 +36,6 @@ body header {
 	border-radius: 15px;
 	border: 2px solid #03a9f4;
 	box-shadow: 0 0 20px #03a9f4;
-	box-sizing: border-box;
 	z-index: 9;
 }
 
@@ -39,11 +48,8 @@ p {
 }
 
 .main {
-	width: 100%;
-	height: 100%;
-	padding-left: 250px;
-	padding-right: 20px;
-	box-sizing: border-box;
+	margin-left: 250px;
+	margin-right: 20px;
 	position: relative;
 	z-index: 5;
 	margin-bottom: 30px;
@@ -71,7 +77,7 @@ p {
 }
 
 .hlogo {
-	margin-top: 30px;
+	padding: 30px 10px;
 }
 
 .hlogo a {
@@ -92,10 +98,10 @@ body header input {
 }
 
 body header nav ul {
-	margin-left: 50px;
+	padding-left: 60px;
 	display: block;
 	overflow: hidden;
-	margin-top: 50px;
+	padding-top: 20px;
 	list-style: none;
 }
 
@@ -103,18 +109,18 @@ body header nav ul li {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	margin-bottom: 20px;
+	padding-bottom: 20px;
 }
 
 body header nav ul li .icon {
 	display: flex;
 	align-items: center;
-	border-radius: 25px;
+	border-radius: 10px;
 	padding: 8px;
 }
 
 body header nav ul li a {
-	margin-left: 10px;
+	padding-left: 10px;
 	color: var(--color-a);
 	font-size: 16px;
 	font-weight: bold;
@@ -131,7 +137,7 @@ body header nav ul li a.selected {
 body header .footer {
 	position: absolute;
 	bottom: 20px;
-	margin-left: 55px;
+	padding-left: 60px;
 }
 
 body header .footer p {
@@ -142,7 +148,7 @@ body header .footer p {
 
 .link_item {
 	width: 20%;
-	color: white;
+	color: var(--color-a);
 	margin: 30px 0 0 30px;
 	border-radius: 15px;
 	text-align: center;
@@ -291,13 +297,6 @@ html {
 	color: var(--color-a);
 }
 
-:root {
-	--color-white: #ffffff;
-	--color-content: rgb(226, 255, 254);
-	--color-a: #000000;
-	--color-blue: #03a9f4;
-}
-
 /* 移动端适配 */
 @media (max-width: 1250px) {
 	.link_item {
@@ -308,18 +307,18 @@ html {
 @media (max-width: 1024px) {
 	body header {
 		display: block;
-		width: 97%;
+		width: 95%;
 		height: auto;
 		position: relative;
 		background-color: var(--color-content);
 		top: 10px;
 		left: 0;
-		margin: 0 auto 40px auto;
+		margin: 0 auto 20px auto;
 	}
 
 	.main {
-		padding-left: 10px;
-		padding-right: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 
 	.h1_title {
@@ -334,7 +333,7 @@ html {
 
 	.hlogo {
 		float: left;
-		margin: 10px 0 10px 15px;
+		padding: 10px;
 	}
 
 	body header .footer {
@@ -348,7 +347,7 @@ html {
 	body header label {
 		display: block;
 		float: right;
-		margin: 15px 15px 0 0;
+		padding: 15px 15px 0 0;
 	}
 
 	body header label img {
@@ -368,11 +367,11 @@ html {
 		list-style: none;
 		position: relative;
 		width: 100%;
-		margin-left: 0px;
+		padding-left: 0px;
 	}
 
 	body header nav ul li {
-		margin-bottom: 0px;
+		padding-bottom: 0px;
 	}
 
 	body header nav ul li .icon {
@@ -382,7 +381,6 @@ html {
 	body header nav ul li a {
 		display: block;
 		width: 100%;
-		margin-left: 0px;
 		padding: 15px 0;
 		text-align: center;
 		color: var(--color-a);
@@ -401,13 +399,6 @@ html {
 	:checked~nav {
 		max-height: 0;
 		transition: max-height 1s ease;
-	}
-
-	#cd-top {
-		height: 40px;
-		width: 40px;
-		right: 10px;
-		bottom: 10px;
 	}
 }
 
@@ -446,6 +437,13 @@ html {
 }
 
 /*深色模式*/
+:root {
+	--color-white: #ffffff;
+	--color-content: rgb(226, 255, 254);
+	--color-a: #000000;
+	--color-blue: #03a9f4;
+}
+
 @media (prefers-color-scheme: dark) {
 	:root {
 		--color-white: #000000;
@@ -453,4 +451,16 @@ html {
 		--color-a: #ffffff;
 		--color-blue: #202124;
 	}
+}
+
+/* 页面加载遮罩 */
+.is-loading {
+	opacity: 0;
+	display: block;
+	position: fixed;
+	background: url(../img/header/loader.gif) no-repeat center/20%, var(--color-white);
+	-moz-transition: none;
+	-webkit-transition: none;
+	-ms-transition: none;
+	transition: none;
 }

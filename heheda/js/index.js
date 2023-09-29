@@ -79,6 +79,8 @@ fetch('./heheda/list.json', {
 		app_yqcy.innerHTML = item_yqcy;
 		app_jyxx.innerHTML = item_jyxx;
 		app_cygj.innerHTML = item_cygj;
+		//移除加载遮罩
+		document.body.classList.remove('is-loading');
 	})
 	.catch(err => {
 		console.error('[404]错误日志：', err);
