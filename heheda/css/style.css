@@ -404,8 +404,8 @@ html {
 
 @media (max-width:600px) {
 	.main {
-		padding-left: 0px;
-		padding-right: 0px;
+		margin-left: 0px;
+		margin-right: 0px;
 	}
 
 	.link_item {
@@ -413,26 +413,18 @@ html {
 		margin-left: 20px;
 		margin-right: 20px;
 	}
-
-	.wrapper {
-		margin: 0 15px;
-	}
 }
 
 @media (max-width:500px) {
 	.main {
-		padding-left: 0px;
-		padding-right: 0px;
+		margin-left: 0px;
+		margin-right: 0px;
 	}
 
 	.link_item {
 		width: 90%;
 		margin-left: 20px;
 		margin-right: 20px;
-	}
-
-	.wrapper {
-		margin: 0 15px;
 	}
 }
 
