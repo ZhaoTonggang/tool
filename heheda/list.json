@@ -82,17 +82,12 @@
 		"e": "使你放松的在线白噪音程序",
 		"u": "https://relax.heheda.top/"
 	}, {
-		"i": "musical",
-		"n": "音悦台",
-		"e": "免费稳定的HTML悬浮播放器",
-		"u": "https://musical.heheda.top/"
-	}, {
 		"i": "instrument",
 		"n": "乐器交互",
 		"e": "关于乐器交互的实验性平台",
 		"u": "https://instrument.heheda.top/"
 	}],
-	"jyxx":[{
+	"jyxx": [{
 		"i": "layui",
 		"n": "Layui中文网",
 		"e": "Layui的中文交流社区",
@@ -103,7 +98,7 @@
 		"e": "免费且功能强大的电子黑板",
 		"u": "https://blackboard.heheda.top/"
 	}],
-	"cygj":[{
+	"cygj": [{
 		"i": "unlock-music",
 		"n": "音乐解密",
 		"e": "解锁各大平台加密音频文件",

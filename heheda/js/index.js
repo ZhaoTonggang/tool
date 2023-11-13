@@ -1,14 +1,18 @@
+// 严格模式
+"use strict";
 // 获取基础信息
-let title = document.title;
-let url = window.location.href;
+const title = document.title;
+const url = window.location.href;
+const topbt = document.getElementById("cd-top");
+let timeout = null;
 if (!navigator.share) {
 	document.getElementById("fxbz").style.display = "none";
-}
-
+};
 // 载入数据
 fetch('./heheda/list.json', {
 		methods: 'GET',
-		cache: 'no-cache'
+		cache: 'force-cache',
+		mode: 'same-origin'
 	})
 	.then(response => {
 		return response.json();
@@ -19,11 +23,11 @@ fetch('./heheda/list.json', {
 		let item_yqcy = "";
 		let item_jyxx = "";
 		let item_cygj = "";
-		let app_yyst = document.getElementById('yyst');
-		let app_yxyl = document.getElementById('yxyl');
-		let app_yqcy = document.getElementById('yqcy');
-		let app_jyxx = document.getElementById('jyxx');
-		let app_cygj = document.getElementById('cygj');
+		const app_yyst = document.getElementById('yyst');
+		const app_yxyl = document.getElementById('yxyl');
+		const app_yqcy = document.getElementById('yqcy');
+		const app_jyxx = document.getElementById('jyxx');
+		const app_cygj = document.getElementById('cygj');
 		let yyst = datas.yyst;
 		let yxyl = datas.yxyl;
 		let yqcy = datas.yqcy;
@@ -85,7 +89,6 @@ fetch('./heheda/list.json', {
 	.catch(err => {
 		console.error('[404]错误日志：', err);
 	})
-
 // 评论功能
 new Valine({
 	el: '#vcomments',
@@ -103,17 +106,15 @@ new Valine({
 	recordIP: true,
 	enableQQ: true
 });
-
 //网页飘落效果
-let pf = new PF({
+const pf = new PF({
 	life: 30,
 });
 pf.init();
 pf.start();
-window.onresize = function() {
+window.onresize = () => {
 	pf.reSize();
-}
-
+};
 // 点击邮件中的链接跳转至相应评论
 // if (window.location.hash) {
 // 	let checkExist = setInterval(function() {
@@ -125,9 +126,8 @@ window.onresize = function() {
 // 		}
 // 	}, 100);
 // }
-
 // 网站标题自动判断
-document.addEventListener('visibilitychange', function() {
+window.addEventListener('visibilitychange', () => {
 	if (document.hidden) {
 		//当窗口不可见
 		document.title = '(つ ェ ⊂)我藏好了哦~';
@@ -139,34 +139,36 @@ document.addEventListener('visibilitychange', function() {
 		}, 3000);
 	}
 })
-
 // 分享按钮
-function call() {
+const call = () => {
 	navigator.share({
 		title: title,
 		url: url,
 		text: '赵彤刚的工具箱'
 	});
 }
-
-//返回顶部
-window.onscroll = function() {
-	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-		document.getElementById("cd-top").style.visibility = "visible";
-	} else {
-		document.getElementById("cd-top").style.visibility = "hidden";
+// 监听屏幕滚动
+window.addEventListener('scroll', () => {
+	if (timeout !== null) {
+		clearTimeout(timeout);
 	}
-}
-
-function cdTop() {
+	timeout = setTimeout(() => {
+		let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+		// 返回顶部
+		if (scrollTop > 100) {
+			topbt.style.visibility = "visible";
+		} else {
+			topbt.style.visibility = "hidden";
+		};
+	}, 500);
+});
+const cdTop = () => {
 	document.body.scrollTop = 0;
 	document.documentElement.scrollTop = 0;
 }
-
 // 版权信息
 console.log("%c赵彤刚%c版权所有", "font-size:15px;padding:3px;color:white;background:#023047",
 	"font-size:15px;padding:3px;color:white;background:#219EBC");
-console.log("%c本人寻求一份前端开发的工作，有意者请联系%c\n%cTEL:15327682114%c\n%c微信:16699352957",
+console.log("%c网页开发或其他商务合作%c\n%c微信:16699352957",
 	"font-size:15px;padding:3px;color:white;background:#023047", "",
-	"font-size:15px;padding:3px;color:white;background:#219EBC", "",
 	"font-size:15px;padding:3px;color:white;background:#219EBC");
