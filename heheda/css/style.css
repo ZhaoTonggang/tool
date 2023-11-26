@@ -420,7 +420,7 @@ html {
 	opacity: 0;
 	display: block;
 	position: fixed;
-	background: url(../img/header/loader.gif) no-repeat center/20%, var(--color-white);
+	background: url(../img/header/loader.svg) no-repeat center/20%, var(--color-white);
 	-moz-transition: none;
 	-webkit-transition: none;
 	-ms-transition: none;
