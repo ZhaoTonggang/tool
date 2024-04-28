@@ -386,8 +386,13 @@ html {
 	}
 
 	.link_item {
+		width: 40%;
 		margin-left: 20px;
 		margin-right: 20px;
+	}
+
+	ins.ads {
+		margin: 30px 0 0 0 !important;
 	}
 }
 
@@ -398,8 +403,13 @@ html {
 	}
 
 	.link_item {
+		width: 38%;
 		margin-left: 20px;
 		margin-right: 20px;
+	}
+
+	ins.ads {
+		margin: 30px 0 0 0 !important;
 	}
 }
 

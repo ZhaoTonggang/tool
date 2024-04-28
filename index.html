@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 <html lang="zh-CN" onselectstart="return false" oncontextmenu=self.event.returnValue=false>
 	<head>
+		<title>赵彤刚的工具箱 - 一个有趣的地方</title>
+		<!-- DNS -->
+		<link rel="dns-prefetch" href="https://other.heheda.top" />
+		<link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
+		<!-- 资源预载入 -->
+		<link rel="preload" as="script" href="./heheda/js/Valine.min.js" />
+		<link rel="preload" as="script" href="./heheda/js/petalfloat.js" />
+		<link rel="preload" as="script" href="./heheda/js/index.js" />
+		<link rel="preload" as="script" href="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" />
+		<link rel="preload" as="script" href="https://other.heheda.top/zplayer/js/zplayer.js" />
+		<link rel="preload" as="script" href="https://other.heheda.top/zplayers.js" />
+		<link rel="preload" as="style" href="./heheda/css/style.css" />
+		<link rel="preload" as="style" href="https://other.heheda.top/zplayer/css/zplayer.css" />
+		<!--图标设置-->
+		<link rel="apple-touch-icon" sizes="192x192" href="./heheda/img/icon/192.png" />
+		<link rel="shortcut icon" type="image/png" sizes="16x16" href="./heheda/img/icon/16.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="./heheda/img/icon/192.png" />
+		<link rel="icon" type="image/png" sizes="128x128" href="./heheda/img/icon/128.png" />
+		<link rel="icon" type="image/png" sizes="144x144" href="./heheda/img/icon/144.png" />
+		<link rel="icon" type="image/png" sizes="256x256" href="./heheda/img/icon/256.png" />
+		<link rel="icon" type="image/png" sizes="512x512" href="./heheda/img/icon/512.png" />
+		<link rel="stylesheet" type="text/css" href="./heheda/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="https://other.heheda.top/zplayer/css/zplayer.css" />
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 		<!--语言-->
 		<meta http-equiv="Content-Language" contect="zh" />
@@ -62,17 +85,6 @@
 		<meta name="theme-color" content="#CCFFFF" />
 		<!-- 添加到主屏 -->
 		<meta name="mobile-web-app-capable" content="yes" />
-		<!--图标设置-->
-		<link rel="apple-touch-icon" sizes="192x192" href="./heheda/img/icon/192.png" />
-		<link rel="shortcut icon" type="image/png" sizes="16x16" href="./heheda/img/icon/16.png" />
-		<link rel="icon" type="image/png" sizes="192x192" href="./heheda/img/icon/192.png" />
-		<link rel="icon" type="image/png" sizes="128x128" href="./heheda/img/icon/128.png" />
-		<link rel="icon" type="image/png" sizes="144x144" href="./heheda/img/icon/144.png" />
-		<link rel="icon" type="image/png" sizes="256x256" href="./heheda/img/icon/256.png" />
-		<link rel="icon" type="image/png" sizes="512x512" href="./heheda/img/icon/512.png" />
-		<link rel="stylesheet" type="text/css" href="./heheda/css/style.css" />
-		<link rel="stylesheet" type="text/css" href="https://other.heheda.top/zplayer/css/zplayer.css" />
-		<title>赵彤刚的工具箱 - 一个有趣的地方</title>
 		<!--PWA配置-->
 		<link rel='manifest' href='./manifest.json' />
 	</head>
@@ -209,7 +221,7 @@
 					<p class="comp">(つ ェ ⊂)评论模块正在加载中...</p>
 				</div>
 				<p id="hitokoto">(*゜ロ゜)ノ一言加载中...</p>
-				<p class="leancloud_visitors" data-flag-title="访客数量">本站已被浏览:<span
+				<p id="/" class="leancloud_visitors" data-flag-title="访客数量">本站已被浏览:<span
 						class="leancloud-visitors-count">1000000+</span>次
 				</p>
 			</section>
@@ -233,16 +245,16 @@
 		<div id="cd-top" onclick="cdTop()" title="返回顶部">回到顶部</div>
 		<div id="player3"></div>
 		<!-- 评论功能 -->
-		<script defer src="https://unpkg.com/valine@latest/dist/Valine.min.js"></script>
+		<script src="./heheda/js/Valine.min.js"></script>
 		<!-- 飘落效果 -->
-		<script defer src="./heheda/js/petalfloat.js"></script>
+		<script src="./heheda/js/petalfloat.js"></script>
 		<!-- 页面逻辑 -->
-		<script defer src="./heheda/js/index.js"></script>
+		<script src="./heheda/js/index.js"></script>
 		<!--一言API-->
-		<script defer src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto"></script>
+		<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto"></script>
 		<!--音乐播放器-->
-		<script defer src="https://other.heheda.top/zplayer/js/zplayer.js"></script>
-		<script defer src="https://other.heheda.top/zplayers.js"></script>
+		<script src="https://other.heheda.top/zplayer/js/zplayer.js"></script>
+		<script src="https://other.heheda.top/zplayers.js"></script>
 		<!-- PWA配置 -->
 		<script async type="module">
 			import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
