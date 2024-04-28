@@ -209,7 +209,7 @@
 					<p class="comp">(つ ェ ⊂)评论模块正在加载中...</p>
 				</div>
 				<p id="hitokoto">(*゜ロ゜)ノ一言加载中...</p>
-				<p id="/" class="leancloud_visitors" data-flag-title="访客数量">本站已被浏览:<span
+				<p class="leancloud_visitors" data-flag-title="访客数量">本站已被浏览:<span
 						class="leancloud-visitors-count">1000000+</span>次
 				</p>
 			</section>
@@ -233,18 +233,18 @@
 		<div id="cd-top" onclick="cdTop()" title="返回顶部">回到顶部</div>
 		<div id="player3"></div>
 		<!-- 评论功能 -->
-		<script async src="https://unpkg.com/valine@latest/dist/Valine.min.js"></script>
+		<script defer src="https://unpkg.com/valine@latest/dist/Valine.min.js"></script>
 		<!-- 飘落效果 -->
-		<script async src="./heheda/js/petalfloat.js"></script>
+		<script defer src="./heheda/js/petalfloat.js"></script>
 		<!-- 页面逻辑 -->
-		<script async src="./heheda/js/index.js"></script>
+		<script defer src="./heheda/js/index.js"></script>
 		<!--一言API-->
-		<script async src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto"></script>
+		<script defer src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto"></script>
 		<!--音乐播放器-->
-		<script async src="https://other.heheda.top/zplayer/js/zplayer.js"></script>
-		<script async src="https://other.heheda.top/zplayers.js"></script>
+		<script defer src="https://other.heheda.top/zplayer/js/zplayer.js"></script>
+		<script defer src="https://other.heheda.top/zplayers.js"></script>
 		<!-- PWA配置 -->
-		<script async="async" type="module">
+		<script async type="module">
 			import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
 			const el = document.createElement('pwa-update');
 			document.body.appendChild(el);
