@@ -5,16 +5,9 @@
 	margin: 0;
 	scroll-behavior: smooth;
 	font-family: KaiTi, YouYuan, Microsoft Yahei;
-	text-align: center;
 	font-weight: bold;
 	text-decoration: none;
 	list-style: none;
-}
-
-body,
-html {
-	height: 100%;
-	width: 100%;
 }
 
 body {
@@ -26,7 +19,7 @@ body {
 	transition: opacity 2s ease-out;
 }
 
-body header {
+header {
 	display: block;
 	position: fixed;
 	top: 20px;
@@ -40,16 +33,19 @@ body header {
 	border: 2px solid #03a9f4;
 	box-shadow: 0 0 20px #03a9f4;
 	z-index: 9;
+	text-align: center;
 }
 
 p {
 	cursor: default;
+	color: var(--color-a);
 }
 
 .main {
 	position: relative;
 	z-index: 5;
-	padding: 0 20px 30px 250px;
+	margin: 0 20px 30px 250px;
+	text-align: center;
 	clear: both;
 	display: flex;
 	flex-wrap: wrap;
@@ -60,8 +56,9 @@ p {
 .h1_title {
 	color: var(--color-a);
 	cursor: default;
-	padding-left: 250px;
+	margin-left: 250px;
 	padding-top: 20px;
+	text-align: center;
 }
 
 .a_animation,
@@ -90,10 +87,10 @@ body header input {
 }
 
 body header nav ul {
-	padding-left: 60px;
+	margin-left: 55px;
 	display: block;
 	overflow: hidden;
-	padding-top: 20px;
+	margin-top: 20px;
 }
 
 body header nav ul li {
@@ -136,7 +133,7 @@ body header .footer p {
 }
 
 .link_item {
-	width: 200px;
+	width: 20%;
 	color: var(--color-a);
 	margin: 30px 0 0 30px;
 	border-radius: 10px;
@@ -158,6 +155,8 @@ body header .footer p {
 }
 
 .link_item .content {
+	width: 100%;
+	aspect-ratio: 1;
 	overflow: hidden;
 	border-radius: 10px;
 }
@@ -180,22 +179,22 @@ body header .footer p {
 	margin-left: 30px;
 }
 
-.content {
-	height: 200px;
-	color: #4b4848;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-.content p {
-	color: var(--color-a);
-	font-size: 18px;
-	line-height: 38px;
+.mainp {
+	font-size: 20px;
+	margin: 5px;
 }
 
 .commentContent {
 	margin: 10px 10px 0 10px;
 	max-width: 100%;
+}
+
+.comp {
+	font-size: 20px;
+	padding: 10px;
+	margin: 10px;
+	border: 2px var(--color-a) dashed;
+	border-radius: 10px;
 }
 
 /*谷歌、safari、qq浏览器、360浏览器滚动条样式*/
@@ -298,7 +297,7 @@ html {
 	}
 
 	.h1_title {
-		padding-left: 0px;
+		margin-left: 0px;
 	}
 
 	.link_item {
@@ -341,27 +340,29 @@ html {
 	body header nav ul {
 		position: relative;
 		width: 100%;
-		padding-left: 0px;
+		margin-left: 0px;
 	}
 
 	body header nav ul li {
-		padding-bottom: 0px;
-	}
-
-	body header nav ul li .icon {
-		display: none;
-	}
-
-	body header nav ul li a {
-		display: block;
-		width: 100%;
-		padding: 15px 0;
-		color: var(--color-a);
-		font-size: 18px;
+		padding: 20px 0;
 		border-top: 5px ridge var(--color-white);
 		border-bottom: 5px ridge var(--color-white);
 		background-color: var(--color-blue);
 		border-radius: 30px;
+	}
+
+	body header nav ul li .icon {
+		position: absolute;
+		left: 50%;
+		margin-left: -50px;
+	}
+
+	body header nav ul li a {
+		position: absolute;
+		color: var(--color-a);
+		font-size: 18px;
+		left: 50%;
+		margin-left: -20px;
 	}
 
 	.wrapper {
@@ -371,6 +372,10 @@ html {
 	:checked~nav {
 		max-height: 0;
 		transition: max-height 1s ease;
+	}
+
+	ins.ads {
+		margin: 30px 20px 0 20px !important;
 	}
 }
 
@@ -418,11 +423,32 @@ html {
 /* 页面加载遮罩 */
 .is-loading {
 	opacity: 0;
-	display: block;
 	position: fixed;
-	background: url(../img/header/loader.svg) no-repeat center/20%, var(--color-white);
+	background: var(--color-white) url('../img/header/loader.svg') no-repeat center/20% fixed;
 	-moz-transition: none;
 	-webkit-transition: none;
 	-ms-transition: none;
 	transition: none;
+}
+
+ins h1 {
+	background-color: aqua;
+	border-radius: 10px;
+	margin: 0 10px;
+	padding: 10px;
+	text-align: center;
+}
+
+/* 关闭空广告提示 */
+ins.ads {
+	margin: 20px 20px 0 280px;
+}
+
+ins.adsbygoogle[data-ad-status="filled"] h1 {
+	display: none;
+}
+
+/* 关闭空广告 */
+ins.adsbygoogle[data-ad-status="unfilled"] {
+	display: none !important;
 }

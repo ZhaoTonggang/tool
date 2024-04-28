@@ -7,8 +7,23 @@ const topbt = document.getElementById("cd-top");
 let timeout = null;
 if (!navigator.share) {
 	document.getElementById("fxbz").style.display = "none";
-};
+}
 // 载入数据
+const ldata = (eid, datas) => {
+	const appid = document.getElementById(eid);
+	let itemdata = "";
+	let data = datas[eid];
+	for (let j = 0; j < data.length; j++) {
+		itemdata +=
+			'<div class="link_item" onclick="window.open(\'' + data[j].u + '\',\'_blank\')" title="' + data[j]
+			.e + '"><div class="content">' +
+			'<img class="logo" src="./heheda/img/fav/' + data[j].i + '.png" alt="' + data[j].n +
+			'" loading=lazy></div>' +
+			'<h2 class="item_h2">' + data[j].n + '</h2>' +
+			'<p class="item_p">' + data[j].e + '</p></div>'
+	}
+	appid.innerHTML = itemdata;
+}
 fetch('./heheda/list.json', {
 		methods: 'GET',
 		cache: 'force-cache',
@@ -18,71 +33,12 @@ fetch('./heheda/list.json', {
 		return response.json();
 	})
 	.then(datas => {
-		let item_yyst = "";
-		let item_yxyl = "";
-		let item_yqcy = "";
-		let item_jyxx = "";
-		let item_cygj = "";
-		const app_yyst = document.getElementById('yyst');
-		const app_yxyl = document.getElementById('yxyl');
-		const app_yqcy = document.getElementById('yqcy');
-		const app_jyxx = document.getElementById('jyxx');
-		const app_cygj = document.getElementById('cygj');
-		let yyst = datas.yyst;
-		let yxyl = datas.yxyl;
-		let yqcy = datas.yqcy;
-		let jyxx = datas.jyxx;
-		let cygj = datas.cygj;
-		for (let j = 0; j < yyst.length; j++) {
-			item_yyst +=
-				'<div class="link_item" onclick="window.open(\'' + yyst[j].u + '\',\'_blank\')" title="' + yyst[j]
-				.e + '"><div class="content">' +
-				'<img class="logo" src="./heheda/img/fav/' + yyst[j].i + '.png" alt="' + yyst[j].n +
-				'" loading=lazy></div>' +
-				'<h2 class="item_h2">' + yyst[j].n + '</h2>' +
-				'<p class="item_p">' + yyst[j].e + '</p></div>'
-		}
-		for (let j = 0; j < yxyl.length; j++) {
-			item_yxyl +=
-				'<div class="link_item" onclick="window.open(\'' + yxyl[j].u + '\',\'_blank\')" title="' + yxyl[j]
-				.e + '"><div class="content">' +
-				'<img class="logo" src="./heheda/img/fav/' + yxyl[j].i + '.png" alt="' + yxyl[j].n +
-				'" loading=lazy></div>' +
-				'<h2 class="item_h2">' + yxyl[j].n + '</h2>' +
-				'<p class="item_p">' + yxyl[j].e + '</p></div>'
-		}
-		for (let j = 0; j < yqcy.length; j++) {
-			item_yqcy +=
-				'<div class="link_item" onclick="window.open(\'' + yqcy[j].u + '\',\'_blank\')" title="' + yqcy[j]
-				.e + '"><div class="content">' +
-				'<img class="logo" src="./heheda/img/fav/' + yqcy[j].i + '.png" alt="' + yqcy[j].n +
-				'" loading=lazy></div>' +
-				'<h2 class="item_h2">' + yqcy[j].n + '</h2>' +
-				'<p class="item_p">' + yqcy[j].e + '</p></div>'
-		}
-		for (let j = 0; j < jyxx.length; j++) {
-			item_jyxx +=
-				'<div class="link_item" onclick="window.open(\'' + jyxx[j].u + '\',\'_blank\')" title="' + jyxx[j]
-				.e + '"><div class="content">' +
-				'<img class="logo" src="./heheda/img/fav/' + jyxx[j].i + '.png" alt="' + jyxx[j].n +
-				'" loading=lazy></div>' +
-				'<h2 class="item_h2">' + jyxx[j].n + '</h2>' +
-				'<p class="item_p">' + jyxx[j].e + '</p></div>'
-		}
-		for (let j = 0; j < cygj.length; j++) {
-			item_cygj +=
-				'<div class="link_item" onclick="window.open(\'' + cygj[j].u + '\',\'_blank\')" title="' + cygj[j]
-				.e + '"><div class="content">' +
-				'<img class="logo" src="./heheda/img/fav/' + cygj[j].i + '.png" alt="' + cygj[j].n +
-				'" loading=lazy></div>' +
-				'<h2 class="item_h2">' + cygj[j].n + '</h2>' +
-				'<p class="item_p">' + cygj[j].e + '</p></div>'
-		}
-		app_yyst.innerHTML = item_yyst;
-		app_yxyl.innerHTML = item_yxyl;
-		app_yqcy.innerHTML = item_yqcy;
-		app_jyxx.innerHTML = item_jyxx;
-		app_cygj.innerHTML = item_cygj;
+		//填充列表
+		ldata('yyst', datas);
+		ldata('yxyl', datas);
+		ldata('yqcy', datas);
+		ldata('jyxx', datas);
+		ldata('cygj', datas);
 		//移除加载遮罩
 		document.body.classList.remove('is-loading');
 	})
@@ -114,7 +70,7 @@ pf.init();
 pf.start();
 window.onresize = () => {
 	pf.reSize();
-};
+}
 // 点击邮件中的链接跳转至相应评论
 // if (window.location.hash) {
 // 	let checkExist = setInterval(function() {
@@ -144,7 +100,7 @@ const call = () => {
 	navigator.share({
 		title: title,
 		url: url,
-		text: '赵彤刚的工具箱'
+		text: '一个有趣的的工具箱'
 	});
 }
 // 监听屏幕滚动
