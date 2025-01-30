@@ -449,15 +449,6 @@ ins h1 {
 	text-align: center;
 }
 
-/* 关闭空广告提示 */
-ins.ads {
-	margin: 20px 20px 0 280px;
-}
-
-ins.adsbygoogle[data-ad-status="filled"] h1 {
-	display: none;
-}
-
 /* 关闭空广告 */
 ins.adsbygoogle[data-ad-status="unfilled"] {
 	display: none !important;
